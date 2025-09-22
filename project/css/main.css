@@ -1,32 +1,218 @@
-body {
-  background-color: #1a1f3a;
-  font-family: "Segoe Ui", "San Francisco","roboto", sans-serif;
-  color: #e8eaed;
-  margin: 0;
-}
-nav ul {
-  list-style-type: none;
+* {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background: #0f1419;
-  text-align: center;
+  box-sizing: border-box;
 }
+body {
+  background-color: #1a1f3a;
+  font-family: "Segoe UI", "San Francisco", "roboto", sans-serif;
+  color: #e8eaed;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+nav {
+  width: 100%;
+  background: #0f1419;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
 nav ul li {
   display: inline-block;
+  margin: 0 1.5rem;
 }
+
 nav ul a {
   display: inline-block;
-  color: white;
+  color: #e8eaed;
   text-align: center;
-  padding: 14px 25px;
+  padding: 0.5rem 1rem;
   text-decoration: none;
+  font-weight: 500;
+  border-radius: 5px;
 }
-.sectie1,.sectie-main{
-    display: flex;
-    gap: 5px;
+
+.main-content {
+  display: flex;
+  flex: 1;
+  margin-top: 300px;
+  padding: 4rem 2rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
-.sectie1-links,.sectie1-rechts,.links,.rechts{
-    flex: 1;
-    padding: 5px;
+.sectie1-links img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(79, 195, 247, 0.3);
+}
+
+.links,
+.sectie-main,
+.rechts {
+  flex: 1;
+  padding: 10px;
+  min-width: 0;
+}
+
+.sectie-main {
+  display: flex;
+  flex-direction: column;
+}
+.sectie1 {
+  margin-bottom: 300px;
+}
+.sectie1,
+.sectie2 {
+  display: flex;
+  gap: 33px;
+}
+
+.sectie1-links,
+.sectie1-rechts,
+.sectie2-links,
+.sectie2-rechts {
+  flex: 1;
+  padding: 5px;
+}
+.sectie1-links {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.sectie1-rechts {
+  text-align: center;
+  max-width: 500px;
+}
+.sectie1-rechts h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #4fc3f7;
+}
+.sectie1-rechts h2 {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #b0bec5;
+}
+.sectie1-rechts p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #b0bec5;
+}
+.sectie-ervaring {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.sectie-ervaring-links,
+.sectie-ervaring-rechts {
+  text-align: center;
+}
+.sectie-ervaring-links-boven {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4fc3f7;
+}
+.sectie-ervaring-links-onder,
+.sectie-ervaring-rechts-onder {
+  font-size: 0.9rem;
+  color: #b0bec5;
+}
+.sectie-ervaring-rechts-boven {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #66bb6a;
+}
+.knoppen {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.knopcv,
+.knopcontact {
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.3s, box-shadow 0.3s;
+  white-space: nowrap;
+}
+.knopcv {
+  background: linear-gradient(135deg, #4fc3f7, #29b6f6);
+}
+.knopcontact {
+  background: linear-gradient(135deg, #66bb6a, #4caf50);
+}
+.sectie2 {
+  padding: 2rem 2rem;
+  max-width: 1200px;
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+  margin-bottom: 3rem;
+}
+.sectie2-links,
+.sectie2-rechts {
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: #242b4d;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.sectie2-links h1,
+.sectie2-rechts h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 7px;
+}
+.sectie2-links h1 {
+  background-color: #4caf50;
+  color: white;
+}
+.sectie2-rechts h1 {
+  background-color: #f44336;
+}
+.sectie2-links ul,
+.sectie2-rechts ul {
+  list-style: none;
+}
+.sectie2-links ul li,
+.sectie2-rechts ul li {
+  border-bottom: 1px solid #3a4466;
+  padding: 0.5rem 0;
+}
+.sectie-links ul li:last-child,
+.sectie2-rechts ul li:last-child {
+  border-bottom: none;
 }
