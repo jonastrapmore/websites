@@ -1,0 +1,32 @@
+body {
+  background-color: #1a1f3a;
+  font-family: "Segoe Ui", "San Francisco","roboto", sans-serif;
+  color: #e8eaed;
+  margin: 0;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #0f1419;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+.sectie1,.sectie-main{
+    display: flex;
+    gap: 5px;
+}
+.sectie1-links,.sectie1-rechts,.links,.rechts{
+    flex: 1;
+    padding: 5px;
+}
