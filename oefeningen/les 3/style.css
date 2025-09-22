@@ -1,0 +1,35 @@
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  color: #fa6432;
+}
+hr {
+  border-width: 1px;
+  border-color: #00293d;
+}
+.klein{
+    border-radius: 5%;
+    margin: 15px;
+    float: left;
+    opacity: 0.5;
+    transition: box-shadow 0.3s ease, opacity 0.3s ease;
+}
+.klein:hover{
+    opacity: 1;
+    box-shadow: 0 4px 8px #fa6432;
+}
+.link{
+    color: #00293d;
+    text-decoration: none;
+}
+.link:hover{
+    color: #fa6432;
+}
+.link:visited{
+    text-decoration: underline;
+}
+.eigenaar{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

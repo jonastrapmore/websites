@@ -1,0 +1,27 @@
+body{
+            font-family: Arial, sans-serif;
+        }
+.section{
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 10px;
+}
+#sectie1{
+    background-color: #e6a2a2;
+    color: #600;
+    font-family: 'PT Serif',serif;
+}
+#sectie2{
+    background-color: #a2c4e6;
+    color: #004080;
+    font-family: 'open sans',sans-serif;
+}
+#sectie3{
+    background-color: #a2e6c4;
+    color: #00663d;
+    font-family: 'space mono',monospace;
+}
