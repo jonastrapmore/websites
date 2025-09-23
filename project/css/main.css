@@ -12,6 +12,8 @@ body {
   min-height: 100vh;
   flex-direction: column;
   line-height: 1.6;
+  padding: 0;
+  font-size: 1.25rem;
 }
 
 nav {
@@ -79,6 +81,10 @@ nav ul a {
 .sectie-main {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 950px;
+  align-items: center;
+  gap: 3rem;
 }
 .sectie1 {
   margin-bottom: 300px;
@@ -172,29 +178,36 @@ nav ul a {
   background: linear-gradient(135deg, #66bb6a, #4caf50);
 }
 .sectie2 {
-  padding: 2rem 2rem;
-  max-width: 1200px;
-  width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
   gap: 3em;
-  margin-bottom: 3rem;
+  width: 100%;
+  max-width: 950px;
+  margin: -80px auto 3rem auto;
+  padding: 2rem;
 }
 .sectie2-links,
 .sectie2-rechts {
-  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
   border-radius: 15px;
   background-color: #242b4d;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
 }
 .sectie2-links h1,
 .sectie2-rechts h1 {
-  text-align: center;
-  margin-bottom: 1.5rem;
+  width: 100%;
+  margin-bottom: 17px;
+  padding: 10px;
   border-radius: 10px;
   font-size: 1.5rem;
-  padding: 7px;
+  text-align: center;
+  box-sizing: border-box;
 }
 .sectie2-links h1 {
   background-color: #4caf50;
@@ -205,14 +218,75 @@ nav ul a {
 }
 .sectie2-links ul,
 .sectie2-rechts ul {
+  padding: 0 2rem;
   list-style: none;
+  text-align: left;
+  margin: 0;
+  width: 100%;
 }
 .sectie2-links ul li,
 .sectie2-rechts ul li {
   border-bottom: 1px solid #3a4466;
   padding: 0.5rem 0;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
 }
-.sectie-links ul li:last-child,
+.sectie2-links ul li:last-child,
 .sectie2-rechts ul li:last-child {
   border-bottom: none;
+}
+.sectie1,
+.sectie2,
+.sectie3,
+.sectie4,
+.sectie1-links,
+.sectie1-rechts,
+.sectie2-links,
+.sectie2-rechts,
+.links,
+.rechts,
+.sectie-main,
+.main-content {
+  border: 2px solid red;
+}
+.sectie1::after,
+.sectie2::after,
+.sectie3::after,
+.sectie4::after,
+.sectie1-links::after,
+.sectie1-rechts::after,
+.sectie2-links::after,
+.sectie2-rechts::after,
+.links::after,
+.rechts::after,
+.sectie-main::after,
+.main-content::after {
+  content: attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 0, 0, 0.7);
+  color: white;
+  font-size: 1rem;
+  padding: 4px 10px;
+  z-index: 9999;
+  pointer-events: none;
+  border-bottom-right-radius: 8px;
+}
+.sectie1,
+.sectie2,
+.sectie3,
+.sectie4,
+.sectie1-links,
+.sectie1-rechts,
+.sectie2-links,
+.sectie2-rechts,
+.links,
+.rechts,
+.sectie-main,
+main,
+content {
+  position: relative; /* Nodig voor absolute overlay */
 }
