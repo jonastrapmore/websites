@@ -246,20 +246,40 @@ nav ul a {
   display: flex;
   flex-direction:column;
   align-items: center;
-  padding: 2.5rem 2rem;
+  padding: 4rem 3.5rem;
   border-radius: 15px;
   background-color: #242b4d;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  max-width: auto;
 }
-.sectie3 h3{
+.sectie4{
+  flex: 1;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 2.5rem 2rem;
+}
+.sectie3 h3, .sectie4 h3{
   color: #4fc3f7;
   font-size: 1.75rem;
+}
+.sectie4 h3,.sectie4 p{
+  padding: 5px;
+}
+.sectie4 .knopcv{
+ margin: 20px;
 }
 .sectie2-links ul li:last-child,
 .sectie2-rechts ul li:last-child {
   border-bottom: none;
 }
+footer{
+  width: 100%;
+  background: #0f1419;
+  left: 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+/*
 .sectie1,
 .sectie2,
 .sectie3,
@@ -311,5 +331,5 @@ nav ul a {
 .sectie-main,
 main,
 content {
-  position: relative; /* Nodig voor absolute overlay */
-}
+  position: relative;
+}*/
