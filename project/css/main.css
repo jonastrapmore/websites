@@ -48,6 +48,12 @@ nav ul a {
   font-weight: 500;
   border-radius: 5px;
 }
+.active{
+  color: #29b6f6;
+}
+nav li a:not(.active):hover{
+  background: #242b4d;
+}
 
 .main-content {
   display: flex;
