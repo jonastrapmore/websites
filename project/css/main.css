@@ -89,14 +89,15 @@ nav ul a {
   max-width: 1200px;
   gap: 4rem;
   padding: 3rem;
-    align-items: center;
+  align-items: center;
 }
 .sectie1,
 .sectie2 {
   display: flex;
   gap: 33px;
 }
-.sectie1-links,.sectie1-rechts{
+.sectie1-links,
+.sectie1-rechts {
   max-width: 550px;
   padding: 2.5rem 2rem;
 }
@@ -239,6 +240,21 @@ nav ul a {
   width: 100%;
   box-sizing: border-box;
   display: block;
+}
+.sectie3{
+  flex: 1;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  background-color: #242b4d;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  max-width: auto;
+}
+.sectie3 h3{
+  color: #4fc3f7;
+  font-size: 1.75rem;
 }
 .sectie2-links ul li:last-child,
 .sectie2-rechts ul li:last-child {
