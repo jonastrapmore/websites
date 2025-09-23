@@ -256,6 +256,7 @@ nav li a:not(.active):hover{
   border-radius: 15px;
   background-color: #242b4d;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  margin-top: -100px;
 }
 .sectie4{
   flex: 1;
@@ -268,7 +269,7 @@ nav li a:not(.active):hover{
   color: #4fc3f7;
   font-size: 1.75rem;
 }
-.sectie4 h3,.sectie4 p{
+.sectie4 h3,.sectie4 p {
   padding: 5px;
 }
 .sectie4 .knopcv{
@@ -338,4 +339,5 @@ footer{
 main,
 content {
   position: relative;
-}*/
+}
+*/
