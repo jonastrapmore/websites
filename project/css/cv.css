@@ -48,10 +48,10 @@ nav ul a {
   font-weight: 500;
   border-radius: 5px;
 }
-.active{
+.active {
   color: #29b6f6;
 }
-nav li a:not(.active):hover{
+nav li a:not(.active):hover {
   background: #242b4d;
 }
 .main-content {
@@ -66,10 +66,7 @@ nav li a:not(.active):hover{
   gap: 3rem;
 }
 
-
-
-
-footer{
+footer {
   width: 100%;
   background: #0f1419;
   left: 0;
