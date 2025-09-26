@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      table {
+        border: 3px, black, solid;
+        border-collapse: collapse;
+      }
+      tr,
+      th,
+      td {
+        border: 1px, solid, black;
+        height: 50px;
+        margin: 4px;
+        text-align: center;
+      }
+      th {
+        background-color: lightgray;
+      }
+      .b200 {
+        width: 200px;
+      }
+      .b100 {
+        width: 100px;
+      }
+      .groen{
+        background-color: green;
+      }
+      .rood{
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Aantal koppen koffie per persoon
+      </caption>
+      <tr>
+        <td rowspan="5">
+          <img src="img/koffie.jpg" alt="koffie in de tabel" />
+        </td>
+        <th class="200">Naam</th>
+        <th class="200">Aantal Koppen</th>
+        <th class="100">Type</th>
+        <th class="100">Suiker</th>
+      </tr>
+      <tr>
+        <td class="200">Jasper Vervliet</td>
+        <td class="b200">10</td>
+        <td class="b100">zo zwart mogelijk</td>
+        <td class="b100 groen">ja</td>
+      </tr>
+      <tr>
+        <td class="b200">maaike van den bulck</td>
+        <td class="b200 groen">15</td>
+        <td class="b100">normaal</td>
+        <td class="b100 rood">nee</td>
+      </tr>
+      <tr>
+        <td class="b200">nele beerten</td>
+        <td class="b200 rood">0</td>
+        <td class="b100">deca</td>
+        <td class="b100 groen">ja</td>
+      </tr>
+      <tr>
+        <td class="b200">anja raymaekers</td>
+        <td class="b200">6</td>
+        <td class="b100">normaal</td>
+        <td class="b100 groen">ja</td>
+      </tr>
+    </table>
+  </body>
+</html>

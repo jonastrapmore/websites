@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+      }
+      h1 {
+        color: orange;
+        font-weight: 800;
+      }
+      table {
+        border: 1px solid lightgray;
+        border-collapse: collapse;
+      }
+      th,
+      td,
+      tr {
+        border: 1px solid, lightgray;
+        align-items: center;
+        text-align: center;
+      }
+      caption {
+        font-size: 8px;
+        padding: 5px;
+        caption-side: bottom;
+      }
+      #pic {
+        width: 150px;
+      }
+      .nadruk{
+        font-weight: bold;
+      }
+      tr{
+        height: 50px;
+      }
+      .startdag{
+        background-color: orange;
+        color: white;
+        font-size: 32px;
+      }
+      td{
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thomas More Kempen</h1>
+    <h2>Programmeren in dagonderwijs</h2>
+    <table>
+        <caption>Overzicht van de activiteiten</caption>
+      <tr>
+        <td rowspan="3">
+          <a href="http://www.thomasmore.be" target="_blank" rel="noopener noreferrer"><img id="pic" src="img/thomas-more-logo_oranje_WEB.png" alt="" /></a>
+        </td>
+        <th colspan="3" class="nadruk">Graduaat (HB05)</th>
+      </tr>
+      <tr>
+        <td colspan="2" class="nadruk">schema</td>
+        <td rowspan="2" class="nadruk">Inhoud</td>
+      </tr>
+      <tr>
+        <td class="nadruk">Begin</td>
+        <td class="nadruk">Einde</td>
+      </tr>
+      <tr>
+        <td rowspan="2" class="nadruk">woensdag</td>
+        <td rowspan="2">8:30</td>
+        <td rowspan="2">12:00</td>
+        <td>Inleiding hoger onderwijs</td>
+      </tr>
+      <tr>
+        <td>Rondleiding op de campus</td>
+      </tr>
+      <tr>
+        <td rowspan="3" class="nadruk">Donderdag</td>
+        <td>8:30</td>
+        <td>12:00</td>
+        <td rowspan="3" class="startdag">startdag</td>
+      </tr>
+      <tr>
+        <td>10:45</td>
+        <td>14:30</td>
+      </tr>
+      <tr>
+        <td>14:30</td>
+        <td>15:30</td>
+      </tr>
+    </table>
+  </body>
+</html>
