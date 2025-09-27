@@ -48,14 +48,13 @@ nav ul a {
   font-weight: 500;
   border-radius: 5px;
 }
-.active{
+.active {
   color: #29b6f6;
 }
-nav li a:not(.active):hover{
+nav li a:not(.active):hover {
   background: #242b4d;
 }
-
-.main-content {
+.main-content-home {
   display: flex;
   flex: 1;
   margin-top: 300px;
@@ -125,7 +124,8 @@ nav li a:not(.active):hover{
   text-align: center;
   max-width: 500px;
 }
-.sectie1-rechts h1 {
+.sectie1-rechts h1
+{
   font-size: 3rem;
   margin-bottom: 1rem;
   color: #4fc3f7;
@@ -247,10 +247,10 @@ nav li a:not(.active):hover{
   box-sizing: border-box;
   display: block;
 }
-.sectie3{
+.sectie3 {
   flex: 1;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   padding: 4rem 3.5rem;
   border-radius: 15px;
@@ -258,33 +258,101 @@ nav li a:not(.active):hover{
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   margin-top: -100px;
 }
-.sectie4{
+.sectie4 {
   flex: 1;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   padding: 2.5rem 2rem;
 }
-.sectie3 h3, .sectie4 h3{
+.sectie3 h3,
+.sectie4 h3 {
   color: #4fc3f7;
   font-size: 1.75rem;
 }
-.sectie4 h3,.sectie4 p {
+.sectie4 h3,
+.sectie4 p {
   padding: 5px;
 }
-.sectie4 .knopcv{
- margin: 20px;
+.sectie4 .knopcv {
+  margin: 20px;
 }
 .sectie2-links ul li:last-child,
 .sectie2-rechts ul li:last-child {
   border-bottom: none;
 }
-footer{
+footer {
   width: 100%;
   background: #0f1419;
   left: 0;
   padding: 1rem 0;
   text-align: center;
+}
+/*****************************cv pagina**********************************/
+.cv-main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;     
+  width: 100vw;          
+  padding: 2rem 4rem;    
+  gap: 2rem;             
+  box-sizing: border-box;
+  margin-top: 80px;
+}
+
+.cv-sectie1,
+.cv-sectie2 {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #242b4d;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  padding: 2rem 3rem;
+  margin: 40px auto;
+  /* Hoogte naar wens instelbaar via margin */
+}
+
+.cv-sectie1 {
+  margin-bottom: 2rem;
+}
+
+.cv-sectie2 {
+  margin-bottom: 2rem;
+}
+.cv-sectie1 h1
+ {
+  color: #29b6f6;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.cv-sectie2 h2{
+  color: #29b6f6;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #29b6f6;
+}
+.cv-sectie1 p{
+  font-size: 1.2rem;
+  color: #b0bec5;;
+  text-align: center;
+}
+.cv-persoonlijke-gegevens{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.cv-gegevens-item{
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #3a4466;
+}
+.cv-gegevens-label{
+  font-weight: bold;
+  color: #b0bec5;
+  min-width: 150px;
+  margin-right: 2rem;
 }
 /*
 .sectie1,
@@ -298,7 +366,11 @@ footer{
 .links,
 .rechts,
 .sectie-main,
-.main-content {
+.main-content,
+.main-content-home,
+.cv-main-content,
+.cv-sectie1,
+.cv-sectie-main {
   border: 2px solid red;
 }
 .sectie1::after,
@@ -312,7 +384,11 @@ footer{
 .links::after,
 .rechts::after,
 .sectie-main::after,
-.main-content::after {
+.main-content::after,
+.main-content-home::after,
+.cv-main-content::after,
+.cv-sectie1::after,
+.cv-sectie-main::after {
   content: attr(class);
   position: absolute;
   top: 0;
@@ -336,8 +412,10 @@ footer{
 .links,
 .rechts,
 .sectie-main,
-main,
-content {
+.main-content,
+.main-content-home,
+.cv-main-content,
+.cv-sectie1,
+.cv-sectie-main {
   position: relative;
-}
-*/
+}*/
