@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      label,
+      input {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      form {
+        width: 50%;
+        margin: auto;
+      }
+      label {
+        font-size: 20px;
+      }
+      input {
+        margin-bottom: 8px;
+        font-size: 17px;
+        padding: 7px;
+        box-shadow: 5px 5px 5px lightgray;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form action="https://tm-statweb.be/forms.php" method="post">
+        <label for="Voornaam">Voornaam:</label>
+        <input
+          type="text"
+          name="Voornaam"
+          id="Voornaam"
+          placeholder="Voornaam"
+        />
+        <label for="Achternaam">Achternaam:</label>
+        <input
+          type="text"
+          name="Achternaam"
+          id="Achternaam"
+          placeholder="Achternaam"
+        />
+        <label for="Gebruikersnaam">Gebruikersnaam:</label>
+        <input
+          type="text"
+          name="Gebruikersnaam"
+          id="Gebruikersnaam"
+          placeholder="Gebruikersnaam"
+        />
+        <label for="Nickname">Nickname:*</label>
+        <input
+          type="text"
+          name="Nickname"
+          id="Nickname"
+          placeholder="Nickname"
+          required
+          minlength="5"
+          maxlength="15"
+        />
+        <label for="Paswoord">Paswoord:*</label>
+        <input
+          type="password"
+          name="Paswoord"
+          id="Paswoord"
+          placeholder="password"
+          required
+        />
+        <label for="Paswoord2">Herhaal Paswoord:*</label>
+        <input
+          type="password"
+          name="Paswoord2"
+          id="Paswoord2"
+          placeholder="Herhaal Paswoord"
+          required
+        />
+        <input type="submit" value="Registreren" />
+      </form>
+    </div>
+  </body>
+</html>
