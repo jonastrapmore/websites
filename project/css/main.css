@@ -1,8 +1,10 @@
+/*****************ALGEMEEN + HOME PAGE***********************/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #1a1f3a;
   font-family: "Segoe UI", "San Francisco", "roboto", sans-serif;
@@ -48,12 +50,15 @@ nav ul a {
   font-weight: 500;
   border-radius: 5px;
 }
+
 .active {
   color: #29b6f6;
 }
+
 nav li a:not(.active):hover {
   background: #242b4d;
 }
+
 .main-content-home {
   display: flex;
   flex: 1;
@@ -65,6 +70,7 @@ nav li a:not(.active):hover {
   flex-wrap: wrap;
   gap: 3rem;
 }
+
 .sectie1-links img {
   width: 350px;
   height: 350px;
@@ -89,6 +95,7 @@ nav li a:not(.active):hover {
   align-items: center;
   gap: 4rem;
 }
+
 .sectie1 {
   margin-bottom: 300px;
   max-width: 1200px;
@@ -96,6 +103,7 @@ nav li a:not(.active):hover {
   padding: 3rem;
   align-items: center;
 }
+
 .sectie1,
 .sectie2 {
   display: flex;
@@ -106,6 +114,7 @@ nav li a:not(.active):hover {
   max-width: 550px;
   padding: 2.5rem 2rem;
 }
+
 .sectie1-links,
 .sectie1-rechts,
 .sectie2-links,
@@ -113,6 +122,7 @@ nav li a:not(.active):hover {
   flex: 1;
   padding: 5px;
 }
+
 .sectie1-links {
   display: flex;
   align-items: center;
@@ -120,27 +130,31 @@ nav li a:not(.active):hover {
   height: 100%;
   min-height: 350px;
 }
+
 .sectie1-rechts {
   text-align: center;
   max-width: 500px;
 }
-.sectie1-rechts h1
-{
+
+.sectie1-rechts h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   color: #4fc3f7;
 }
+
 .sectie1-rechts h2 {
   font-size: 1.3rem;
   font-style: italic;
   margin-bottom: 1rem;
   color: #b0bec5;
 }
+
 .sectie1-rechts p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   color: #b0bec5;
 }
+
 .sectie-ervaring {
   display: flex;
   gap: 2rem;
@@ -148,31 +162,37 @@ nav li a:not(.active):hover {
   margin-bottom: 2rem;
   flex-wrap: wrap;
 }
+
 .sectie-ervaring-links,
 .sectie-ervaring-rechts {
   text-align: center;
 }
+
 .sectie-ervaring-links-boven {
   font-size: 2.5rem;
   font-weight: bold;
   color: #4fc3f7;
 }
+
 .sectie-ervaring-links-onder,
 .sectie-ervaring-rechts-onder {
   font-size: 0.9rem;
   color: #b0bec5;
 }
+
 .sectie-ervaring-rechts-boven {
   font-size: 2.5rem;
   font-weight: bold;
   color: #66bb6a;
 }
+
 .knoppen {
   display: flex;
   gap: 1rem;
   justify-content: center;
   flex-wrap: nowrap;
 }
+
 .knopcv,
 .knopcontact {
   color: white;
@@ -185,12 +205,15 @@ nav li a:not(.active):hover {
   transition: transform 0.3s, box-shadow 0.3s;
   white-space: nowrap;
 }
+
 .knopcv {
   background: linear-gradient(135deg, #4fc3f7, #29b6f6);
 }
+
 .knopcontact {
   background: linear-gradient(135deg, #66bb6a, #4caf50);
 }
+
 .sectie2 {
   display: flex;
   justify-content: center;
@@ -201,6 +224,7 @@ nav li a:not(.active):hover {
   margin: -80px auto 3rem auto;
   padding: 3rem;
 }
+
 .sectie2-links,
 .sectie2-rechts {
   flex: 1;
@@ -213,6 +237,7 @@ nav li a:not(.active):hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   max-width: 575px;
 }
+
 .sectie2-links h1,
 .sectie2-rechts h1 {
   width: 100%;
@@ -223,13 +248,16 @@ nav li a:not(.active):hover {
   text-align: center;
   box-sizing: border-box;
 }
+
 .sectie2-links h1 {
   background-color: #4caf50;
   color: white;
 }
+
 .sectie2-rechts h1 {
   background-color: #f44336;
 }
+
 .sectie2-links ul,
 .sectie2-rechts ul {
   padding: 0;
@@ -238,6 +266,7 @@ nav li a:not(.active):hover {
   margin: 0;
   width: 100%;
 }
+
 .sectie2-links ul li,
 .sectie2-rechts ul li {
   border-bottom: 1px solid #3a4466;
@@ -247,6 +276,7 @@ nav li a:not(.active):hover {
   box-sizing: border-box;
   display: block;
 }
+
 .sectie3 {
   flex: 1;
   display: flex;
@@ -258,6 +288,7 @@ nav li a:not(.active):hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   margin-top: -100px;
 }
+
 .sectie4 {
   flex: 1;
   display: flex;
@@ -265,22 +296,27 @@ nav li a:not(.active):hover {
   align-items: center;
   padding: 2.5rem 2rem;
 }
+
 .sectie3 h3,
 .sectie4 h3 {
   color: #4fc3f7;
   font-size: 1.75rem;
 }
+
 .sectie4 h3,
 .sectie4 p {
   padding: 5px;
 }
+
 .sectie4 .knopcv {
   margin: 20px;
 }
+
 .sectie2-links ul li:last-child,
 .sectie2-rechts ul li:last-child {
   border-bottom: none;
 }
+
 footer {
   width: 100%;
   background: #0f1419;
@@ -288,74 +324,274 @@ footer {
   padding: 1rem 0;
   text-align: center;
 }
-/*****************************cv pagina**********************************/
-.cv-main-content {
+
+/*****************************default pagina**********************************/
+.def-main-content {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;     
-  width: 100vw;          
-  padding: 2rem 4rem;    
-  gap: 2rem;             
+  min-height: 100vh;
+  width: 100vw;
+  padding: 2rem 4rem;
+  gap: 2rem;
   box-sizing: border-box;
   margin-top: 80px;
 }
 
-.cv-sectie1,
-.cv-sectie2,
-.cv-sectie3 {
+.def-sectie1,
+.def-sectie2,
+.def-sectie3,
+.def-sectie4,
+.def-sectie5,
+.def-sectie6 {
   max-width: 1200px;
   width: 100%;
   background-color: #242b4d;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   padding: 2rem 3rem;
-  margin: 40px auto;
+  margin: 40px auto 2rem auto;
   /* Hoogte naar wens instelbaar via margin */
 }
 
-.cv-sectie1 {
-  margin-bottom: 2rem;
-}
-
-.cv-sectie2 {
-  margin-bottom: 2rem;
-}
-.cv-sectie1 h1
- {
+.def-sectie1 h1 {
   color: #29b6f6;
   text-align: center;
   margin-bottom: 1rem;
 }
-.cv-sectie2 h2{
+.def-sectie2 h2,
+.def-sectie3 h2,
+.def-sectie4 h2,
+.def-sectie5 h2,
+.def-sectie6 h2 {
   color: #29b6f6;
   margin-bottom: 1rem;
   font-size: 1.8rem;
   border-bottom: 2px solid #29b6f6;
 }
-.cv-sectie1 p{
+.def-sectie1 p {
   font-size: 1.2rem;
-  color: #b0bec5;;
+  color: #b0bec5;
   text-align: center;
 }
-.cv-persoonlijke-gegevens{
+
+.def-sectie3 h3 {
+  color: #66bb6a;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.def-sectie3 h4 {
+  color: #4fc3f7;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+.def-sectie3 h5 {
+  color: #b0bec5;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.def-sectie4 h3 {
+  color: #4fc3f7;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+.def-sectie4 h4 {
+  color: #66bb6a;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  font-size: 1.3rem;
+}
+
+.def-sectie4 p {
+  margin: 0;
+}
+.def-sectie5 h3 {
+  color: #66bb6a;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+/********************************cv.html******************/
+.cv-sectie3-period,
+.cv-sectie4-period {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #242b4d;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem 3rem;
+  margin: 40px auto;
+  /* Hoogte naar wens instelbaar via margin */
+}
+.cv-persoonlijke-gegevens {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-bottom: 1rem;
 }
-.cv-gegevens-item{
+.cv-gegevens-item {
   display: flex;
   align-items: center;
   padding: 0.8rem 0;
   border-bottom: 1px solid #3a4466;
 }
-.cv-gegevens-label{
+.cv-gegevens-label {
   font-weight: bold;
   color: #b0bec5;
   min-width: 150px;
   margin-right: 2rem;
 }
+.cv-sectie3-period {
+  background-color: #1a1f3a;
+  border-radius: 10px;
+  border-left: 4px solid #4fc3f7;
+}
+.cv-sectie4-period {
+  background-color: #1a1f3a;
+  border-radius: 10px;
+  border-left: 4px solid #66bb6a;
+}
 
+.cv-sectie5-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.cv-sectie5-skills-grid-cat {
+  display: block;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cv-sectie5-skill-item {
+  margin-bottom: 1rem;
+}
+.cv-sectie5-skill-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+.cv-sectie5-skill-bar {
+  background-color: #1a1f3a;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.cv-sectie5-skill-progress {
+  width: 90%;
+  height: 100%;
+  background-color: #4fc3f7;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+.cv-softskills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.cv-skill {
+  background-color: #1a1f3a;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #66bb6a;
+  white-space: nowrap;
+  min-width: 200px;
+  font-size: 1.2rem; /*kleiner lettertyp omdat het anders niet past*/
+}
+
+/*************************************Contact.html***********************************/
+.contact-beschikbaar {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #66bb6a;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem 3rem;
+  margin: 40px auto; /* Hoogte naar wens instelbaar via margin */
+}
+.contact-beschikbaar h1 {
+  color: #1a1f3a;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.contact-beschikbaar p {
+  font-size: 1.2rem;
+  color: #1a1f3a;
+  text-align: center;
+  font-weight: bold;
+}
+.contact-contactgegevens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.contact-contactitem {
+  background-color: #1a1f3a;
+  padding: 1.5rem;
+  border-left: 4px solid #66bb6a;
+}
+.contact-contactgegevens h3 {
+  color: #66bb6a;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+.contact-contactitem {
+  color: #29b6f6;
+  font-size: 1.2rem;
+}
+.contact-contactitem a {
+  color: #29b6f6;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.contact-contactitem a:hover {
+  text-decoration: underline;
+}
+
+.contact-formgroup {
+  margin-bottom: 1.5rem;
+}
+
+.contact-formgroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #66bb6a;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.contact-formgroup input,
+.contact-formgroup select,
+.contact-formgroup textarea {
+  width: 100%;
+  font-size: 17px;
+  padding: 0.8rem;
+  background-color: #1a1f3a;
+  border: 2px solid #4fc3f7;
+  color: #e8eaed;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.contact-formgroup textarea {
+  height: 120px;
+  resize: vertical;
+}
+.contact-formbtn {
+  background-color: #66bb6a;
+  color: #1a1f3a;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+/*
 .sectie1,
 .sectie2,
 .sectie3,
@@ -373,7 +609,13 @@ footer {
 .cv-sectie1,
 .cv-sectie-main,
 .cv-sectie2,
-.cv-sectie3 {
+.cv-sectie3,
+.cv-sectie4,
+.cv-sectie5,
+.cv-sectie5-skills-grid,
+.cv-sectie5-skills-grid-cat,
+.cv-sectie6
+{
   border: 2px solid red;
 }
 .sectie1::after,
@@ -393,7 +635,13 @@ footer {
 .cv-sectie1::after,
 .cv-sectie-main::after,
 .cv-sectie2::after,
-.cv-sectie3::after {
+.cv-sectie3::after,
+.cv-sectie4::after,
+.cv-sectie5::after,
+.cv-sectie5-skills-grid::after,
+.cv-sectie5-skills-grid-cat::after,
+.cv-sectie6::after
+ {
   content: attr(class);
   position: absolute;
   top: 0;
@@ -423,6 +671,11 @@ footer {
 .cv-sectie1,
 .cv-sectie-main,
 .cv-sectie2,
-.cv-sectie3 {
+.cv-sectie3,
+.cv-sectie4,
+.cv-sectie5,
+.cv-sectie5-skills-grid,
+.cv-sectie5-skills-grid-cat,
+.cv-sectie6 {
   position: relative;
-}
+}*/
