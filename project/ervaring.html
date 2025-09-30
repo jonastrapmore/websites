@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .timeline {
+      position: relative;
+      margin: 60px auto;
+      width: 600px; /* Of 100%, naar wens */
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50px;
+      width: 4px;
+      height: 100%;
+      background: #4fc3f7;
+      border-radius: 2px;
+    }
+
+    .timeline-item {
+      display: flex;
+      position: relative;
+      margin-bottom: 50px;
+    }
+
+    .timeline-dot {
+      width: 20px;
+      height: 20px;
+      background: #4fc3f7;
+      border-radius: 50%;
+      position: absolute;
+      left: 43px;
+      top: 0;
+      z-index: 10;
+      border: 3px solid #fff;
+    }
+
+    .timeline-content {
+      margin-left: 80px;
+      background: #242b4d;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+      padding: 1.5rem 2rem;
+      color: #e8eaed;
+      min-width: 250px;
+    }
+  </style>
+  <body>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>ICT Manager</h3>
+          <span>2022-2025</span>
+          <p>Leiding geven aan IT team...</p>
+        </div>
+      </div>
+      <!-- Repeat voor andere ervaringen -->
+    </div>
+  </body>
+</html>
