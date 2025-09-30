@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.jonas{
+    color: red;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.bold{
+    font-weight: bold;
+}
+.blauw
+{
+    color: blue;
+}
+.banner{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+.banner:hover{
+    background-color: red;
+}

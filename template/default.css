@@ -1,0 +1,159 @@
+/* Reset alle padding en margin en zet box-sizing op border-box zodat padding/border gelijk meegeteld worden in grootte */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Belangrijk voor flexlayouts op kleine schermen */
+}
+
+/* Hoofdcontainer gemaakt als flex container, met flex richting kolom */
+.def-main-content {
+  display: flex;
+  flex-direction: column; /* deze zorgt ervoor dat alle def-secties onder elkaar komen te staan */
+  padding: 10px; /* Ruimte binnen de container voor visueel zicht */
+}
+
+/* Algemene styling voor secties */
+.def-sectie1,
+.def-sectie2,
+.def-sectie3,
+.def-sectie4,
+.def-sectie5 {
+  min-height: 600px;  /* Min hoogte zodat ze zichtbaar voldoende hoog zijn en dat het goed oogt voor dit voorbeeld */
+  margin: 10px; 
+}
+
+/* Containers die meerdere kolommen bevatten worden flex containers met standaard rijrichting */
+.def-sectie2-row,
+.def-sectie4-row,
+.def-sectie5-row {
+  display: flex; /* alle div's in row gaan naast elkaar staan*/
+  min-height: 600px; /* Min hoogte passend bij secties */
+}
+
+/* Kolommen binnen de rijen krijgen flex-grow 1 om gelijk te verdelen */
+.def-sectie2-L,
+.def-sectie2-R,
+.def-sectie4-L,
+.def-sectie4-R,
+.def-sectie5-L,
+.def-sectie5-R,
+.def-sectie5-M {
+  flex: 1; /* alle div's verdelen zich gelijkmatig over de parent div */
+  margin: 10px; /* Ruimte rondom kolommen binnen rij */
+  max-width: 100%; /* Kolommen niet breder dan hun container */
+}
+
+/* Hoofdtitels centreren */
+h1 {
+  text-align: center;
+}
+
+/* Media query voor kleine schermen (max 700px) dit maakt het variable voor phone's. !!!!HEBBEN WE NOG NIET GEZIEN IN DE LES!!!!*/
+@media (max-width: 700px) {
+  /* Maak main container zonder padding en margin voor maximale schermbreedte */
+  .def-main-content {
+    padding: 0;
+    margin: 0;
+  }
+  /* Secties krijgen geen marge of padding zodat content goed aansluit */
+  .def-sectie1,
+  .def-sectie2,
+  .def-sectie3,
+  .def-sectie4,
+  .def-sectie5 {
+    margin: 0;
+    padding: 0;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  /* Containers en secties worden 100% breed en flex richting wordt kolom zodat alles onder elkaar komt */
+  .def-main-content,
+  .def-sectie1,
+  .def-sectie2,
+  .def-sectie3,
+  .def-sectie2-row,
+  .def-sectie4,
+  .def-sectie4-row,
+  .def-sectie5-row,
+  .def-sectie5 {
+    width: 100%;
+    min-height: 300px;
+    flex-direction: column; /* dit maakt dat ALLES onder elkaar komt te staan voor kleinere schermen, vermits we nu ook de def-sectiex-row dit laten doen*/
+    padding: 0;
+    margin: 0;
+  }
+  /* Kolommen binnen die rijen krijgen geen marge en padding om mooi aan te sluiten op mobiel */
+  .def-sectie2-L,
+  .def-sectie2-R,
+  .def-sectie4-L,
+  .def-sectie4-R,
+  .def-sectie5-L,
+  .def-sectie5-M,
+  .def-sectie5-R {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+/****wat hieronder staat is puur en alleen om de kadertjes tevoorschijn te laten komen. kan verwijderd worden******/
+
+.def-main-content,
+.def-sectie1,
+.def-sectie2,
+.def-sectie2-L,
+.def-sectie2-R,
+.def-sectie3,
+.def-sectie4,
+.def-sectie4-L,
+.def-sectie4-R,
+.def-sectie5,
+.def-sectie5-R,
+.def-sectie5-M,
+.def-sectie5-L {
+  border: 2px solid red;
+}
+
+.def-main-content::after,
+.def-sectie1::after,
+.def-sectie2::after,
+.def-sectie2-L::after,
+.def-sectie2-R::after,
+.def-sectie3::after,
+.def-sectie4::after,
+.def-sectie4-L::after,
+.def-sectie4-R::after,
+.def-sectie5::after,
+.def-sectie5-L::after,
+.def-sectie5-M::after,
+.def-sectie5-R::after {
+  content: attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 0, 0, 0.7);
+  color: white;
+  font-size: 1rem;
+  padding: 4px 10px;
+  z-index: 9999;
+  pointer-events: none;
+  border-bottom-right-radius: 8px;
+}
+
+.def-main-content,
+.def-sectie1,
+.def-sectie2,
+.def-sectie2-L,
+.def-sectie2-R,
+.def-sectie3,
+.def-sectie4,
+.def-sectie4-L,
+.def-sectie4-R,
+.def-sectie5,
+.def-sectie5-L,
+.def-sectie5-M,
+.def-sectie5-R {
+  position: relative;
+}
