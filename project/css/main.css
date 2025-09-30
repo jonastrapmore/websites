@@ -73,11 +73,11 @@ nav li a:not(.active):hover {
 }
 
 .sectie1-links img {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 10px 30px rgba(79, 195, 247, 0.3);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* zorgt voor bijsnijden indien nodig */
+  display: block;
+  border-radius: 50%; /* zorgt dat de afbeelding ook rond is */
 }
 
 .links,
@@ -126,11 +126,16 @@ nav li a:not(.active):hover {
 }
 
 .sectie1-links {
+  flex: 1;
+  max-width: 350px; /* gelijke max breedte */
+  aspect-ratio: 1/1; /* vierkante container */
+  overflow: hidden;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  min-height: 350px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(79, 195, 247, 0.3);
 }
 
 .sectie1-rechts {
@@ -481,8 +486,36 @@ footer {
   border-radius: 4px;
   overflow: hidden;
 }
-.cv-sectie5-skill-progress {
+.cv-sectie5-skill-progress-95{
+  width: 95%;
+  height: 100%;
+  background-color: #4fc3f7;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+.cv-sectie5-skill-progress-90{
   width: 90%;
+  height: 100%;
+  background-color: #4fc3f7;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+.cv-sectie5-skill-progress-85{
+  width: 85%;
+  height: 100%;
+  background-color: #4fc3f7;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+.cv-sectie5-skill-progress-80{
+  width: 80%;
+  height: 100%;
+  background-color: #4fc3f7;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+.cv-sectie5-skill-progress-75{
+  width: 75%;
   height: 100%;
   background-color: #4fc3f7;
   border-radius: 4px;
@@ -595,11 +628,43 @@ footer {
   width: 100%;
 }
 /*************************************Hobby.html**********/
-.hobby-green h2{
+.hobby-fotos {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #242b4d;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem 3rem;
+  margin: 40px auto 2rem auto;
+  /* Hoogte naar wens instelbaar via margin */
+}
+.hobby-foto-poker,
+.hobby-foto-petanque,
+.hobby-foto-pretpark {
+  flex: 1;
+  max-width: 350px; /* gelijke max breedte */
+  aspect-ratio: 1/1; /* vierkante container */
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(79, 195, 247, 0.3);
+}
+.hobby-fotos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* zorgt voor bijsnijden indien nodig */
+  display: block;
+  border-radius: 50%; /* zorgt dat de afbeelding ook rond is */
+}
+.hobby-green h2 {
   color: #66bb6a;
   border-color: #66bb6a;
 }
-.hobby-green p{
+.hobby-green p {
   margin-bottom: 1rem;
 }
 .hobby-skills-grid {
@@ -608,7 +673,7 @@ footer {
   gap: 2rem;
   margin: 2rem;
 }
-.hobby-skills-grid-cat ul{
+.hobby-skills-grid-cat ul {
   list-style-type: disc;
   padding-left: 20px;
 }
@@ -619,35 +684,33 @@ footer {
   box-sizing: border-box;
   border-radius: 8px;
 }
-.hobby-skills-cat-poker{
+.hobby-skills-cat-poker {
   border-left: 4px solid #66bb6a;
 }
-.hobby-skills-cat-petanque{
+.hobby-skills-cat-petanque {
   border-left: 4px solid #4fc3f7;
 }
-.hobby-skills-grid-cat li{
+.hobby-skills-grid-cat li {
   border-bottom: 1px solid #3a4466;
   padding: 0.5rem 0;
   text-align: left;
   width: 100%;
 }
-.hobby-skills-grid-cat li:last-child{
+.hobby-skills-grid-cat li:last-child {
   border-bottom: none;
 }
-.hobby-skills-cat-poker ul li::marker{
-  color: #66bb6a
-}
-.hobby-skills-cat-petanque ul li::marker{
-  color: #4fc3f7;
-}
-.hobby-skills-cat-petanque h4{
-  color: #4fc3f7;
-}
-.hobby-skills-cat-poker h4{
+.hobby-skills-cat-poker ul li::marker {
   color: #66bb6a;
 }
-
-
+.hobby-skills-cat-petanque ul li::marker {
+  color: #4fc3f7;
+}
+.hobby-skills-cat-petanque h4 {
+  color: #4fc3f7;
+}
+.hobby-skills-cat-poker h4 {
+  color: #66bb6a;
+}
 
 /*
 .sectie1,
@@ -672,7 +735,14 @@ footer {
 .cv-sectie5,
 .cv-sectie5-skills-grid,
 .cv-sectie5-skills-grid-cat,
-.cv-sectie6
+.cv-sectie6,
+.def-sectie1,
+.def-sectie2,
+.hobby-fotos,
+.hobby-foto-poker,
+.hobby-foto-petanque,
+.hobby-foto-pretpark,
+.def-main-content
 {
   border: 2px solid red;
 }
@@ -698,7 +768,14 @@ footer {
 .cv-sectie5::after,
 .cv-sectie5-skills-grid::after,
 .cv-sectie5-skills-grid-cat::after,
-.cv-sectie6::after
+.cv-sectie6::after,
+.def-sectie1::after,
+.def-sectie2::after,
+.hobby-fotos::after,
+.hobby-foto-poker::after,
+.hobby-foto-petanque::after,
+.hobby-foto-pretpark::after,
+.def-main-content::after
  {
   content: attr(class);
   position: absolute;
@@ -734,6 +811,13 @@ footer {
 .cv-sectie5,
 .cv-sectie5-skills-grid,
 .cv-sectie5-skills-grid-cat,
-.cv-sectie6 {
+.cv-sectie6,
+.def-sectie1,
+.def-sectie2,
+.hobby-fotos,
+.hobby-foto-poker,
+.hobby-foto-petanque,
+.hobby-foto-pretpark,
+.def-main-content {
   position: relative;
 }*/
