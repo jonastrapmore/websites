@@ -325,6 +325,16 @@ nav li a:not(.active):hover {
   border-bottom: none;
 }
 
+.home-link-ervaring{
+  text-decoration: none;
+  color: #4fc3f7;
+}
+
+.home-link-ervaring:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 footer {
   width: 100%;
   background: #0f1419;
@@ -338,7 +348,6 @@ footer {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  width: 100vw;
   padding: 2rem 4rem;
   gap: 2rem;
   box-sizing: border-box;
@@ -486,35 +495,35 @@ footer {
   border-radius: 4px;
   overflow: hidden;
 }
-.cv-sectie5-skill-progress-95{
+.cv-sectie5-skill-progress-95 {
   width: 95%;
   height: 100%;
   background-color: #4fc3f7;
   border-radius: 4px;
   transition: 0.3s ease;
 }
-.cv-sectie5-skill-progress-90{
+.cv-sectie5-skill-progress-90 {
   width: 90%;
   height: 100%;
   background-color: #4fc3f7;
   border-radius: 4px;
   transition: 0.3s ease;
 }
-.cv-sectie5-skill-progress-85{
+.cv-sectie5-skill-progress-85 {
   width: 85%;
   height: 100%;
   background-color: #4fc3f7;
   border-radius: 4px;
   transition: 0.3s ease;
 }
-.cv-sectie5-skill-progress-80{
+.cv-sectie5-skill-progress-80 {
   width: 80%;
   height: 100%;
   background-color: #4fc3f7;
   border-radius: 4px;
   transition: 0.3s ease;
 }
-.cv-sectie5-skill-progress-75{
+.cv-sectie5-skill-progress-75 {
   width: 75%;
   height: 100%;
   background-color: #4fc3f7;
@@ -712,6 +721,208 @@ footer {
   color: #66bb6a;
 }
 
+/**********************ervaring.html*****************/
+/* The actual timeline (the vertical ruler) */
+.ervaring-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.ervaring-timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #4fc3f7;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.ervaring-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+/* The circles on the timeline */
+.ervaring-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #4fc3f7;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.ervaring-left::after {
+  right: -17px;
+  left: auto;
+}
+
+.ervaring-right::after {
+  left: -16px;
+  right: auto;
+}
+
+/* Place the container to the left */
+.ervaring-left {
+  left: 0;
+  position: relative;
+  transform: translate(-10px);
+}
+
+/* Place the container to the right */
+.ervaring-right {
+  left: 50%;
+  position: relative;
+  transform: translate(10px);
+}
+
+/* Add arrows to the left container (pointing right) */
+.ervaring-left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #242b4d;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #242b4d;
+}
+
+/* Add arrows to the right container (pointing left) */
+.ervaring-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #242b4d;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #242b4d transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.ervaring-right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.ervaring-content {
+  padding: 2rem;
+  background-color: #242b4d;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ervaring-content h2 {
+  color: #66bb6a;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.ervaring-content h3 {
+  color: #4fc3f7;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.ervaring-content h4 {
+  color: #b0bec5;
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.ervaring-content p {
+  color: #e8eaed;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.ervaring-content ul{
+  margin-top: 1rem;
+  list-style-type: none;
+}
+
+.ervaring-content li {
+  color: #66bb6a;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  padding-left: 0;
+  position: relative;
+}
+
+.ervaring-content li::before {
+  content: "✓ ";
+  color: #66bb6a;
+  font-weight: bold;
+  position: relative;
+  left: 0;
+}
+
+.ervaring-h2{
+  text-align: center;
+}
+
+.ervaring-projecten-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+
+.ervaring-project{
+  background-color: #1a1f3a;
+  padding: 2rem;
+  border-radius: 15px;
+  border-left: 4px solid #4fc3f7;
+}
+
+.ervaring-project h3{
+  color: #66bb6a;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.ervaring-project p{
+  color: #e8eaed;
+  margin-bottom: 1.5rem;
+}
+
+.ervaring-project ul{
+  margin-top: 1rem;
+  list-style-type: none;
+}
+
+.ervaring-project li{
+  color: #66bb6a;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  padding-left: 0;
+  position: relative;
+}
+.ervaring-project li::before {
+  content: "✓ ";
+  color: #66bb6a;
+  font-weight: bold;
+  position: relative;
+  left: 0;
+}
+
 /*
 .sectie1,
 .sectie2,
@@ -738,6 +949,10 @@ footer {
 .cv-sectie6,
 .def-sectie1,
 .def-sectie2,
+.def-sectie3,
+.def-sectie4,
+.def-sectie5,
+.def-sectie6,
 .hobby-fotos,
 .hobby-foto-poker,
 .hobby-foto-petanque,
@@ -771,6 +986,10 @@ footer {
 .cv-sectie6::after,
 .def-sectie1::after,
 .def-sectie2::after,
+.def-sectie3::after,
+.def-sectie4::after,
+.def-sectie5::after,
+.def-sectie6::after,
 .hobby-fotos::after,
 .hobby-foto-poker::after,
 .hobby-foto-petanque::after,
@@ -814,6 +1033,10 @@ footer {
 .cv-sectie6,
 .def-sectie1,
 .def-sectie2,
+.def-sectie3,
+.def-sectie4,
+.def-sectie5,
+.def-sectie6,
 .hobby-fotos,
 .hobby-foto-poker,
 .hobby-foto-petanque,
