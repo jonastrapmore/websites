@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+      }
+      select, input{
+        box-shadow: 5px 5px lightgrey;
+        padding: 10px;
+        margin: 5px;
+        background-color: orange;
+        color: white;
+      }
+      input::placeholder{
+        color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="https://tm-statweb.be/forms.php" method="post">
+      <div>
+        <label for="voornaam">Voornaam</label>
+        <input type="text" name="voornaam" id="voornaam" placeholder="voornaam">
+        <label for="Familienaam">Familienaam</label>
+        <input type="text" name="Familienaam" id="Familienaam" placeholder="Familienaam">
+        <label for="auto">Kies een auto</label>
+        <select name="auto" id="auto">
+            <option value="" disabled selected hidden>Kies een auto</option>
+            <option value="Ford">Ford</option>
+            <option value="Peugeot">Peugeot</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Skoda">Skoda</option>
+            <option value="Saab">Saab</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Audi">Audi</option>
+        </select>
+        <input type="submit" value="Registren">
+      </div>
+    </form>
+  </body>
+</html>
