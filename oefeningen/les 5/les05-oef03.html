@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      fieldset {
+        font-size: 12px;
+        text-align: left;
+      }
+      legend{
+        background-color: maroon;
+        color: white;
+        padding: 10px;
+      }
+      form{
+        width: 25%;
+      }
+      fieldset,input{
+        background: lightyellow;
+        margin-top:20px
+      }
+      input[type="submit"]{
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="https://tm-statweb.be/forms.php" method="post">
+      <fieldset>
+        <legend>Geslacht</legend>
+        <label for="man">Man</label>
+        <input type="radio" name="geslacht" id="man" value="man" >
+        <label for="vrouw">vrouw</label>
+        <input type="radio" name="geslacht" id="vrouw" value="vrouw" >
+        <label for="ander">ander</label>
+        <input type="radio" name="geslacht" id="ander" value="ander" >
+      </fieldset>
+      <fieldset>
+        <legend>Kleur Ogen</legend>
+        <label for="Bruin">Bruin</label>
+        <input type="radio" name="ogen" id="Bruin" value="Bruin" >
+        <label for="Groen">Groen</label>
+        <input type="radio" name="ogen" id="Groen" value="Groen" >
+        <label for="Blauw">Blauw</label>
+        <input type="radio" name="ogen" id="Blauw" value="Blauw" >
+        <label for="Grijs">Grijs</label>
+        <input type="radio" name="ogen" id="Grijs" value="Grijs" >
+      </fieldset>
+      <input type="submit" value="Registreren" >
+    </form>
+  </body>
+</html>

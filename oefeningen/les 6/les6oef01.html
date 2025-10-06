@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap");
+
+      .background {
+        background-image: url("kompas.jpg");
+        width: 600px;
+        height: 600px;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        position: relative;
+      }
+
+      .cell {
+        position: relative;
+      }
+
+      .noord,
+      .oost,
+      .zuid,
+      .west {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-family: "Playwrite DE SAS", cursive;
+      }
+
+      .noord-cell {
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .oost-cell {
+        grid-column: 3;
+        grid-row: 2;
+      }
+      .zuid-cell {
+        grid-column: 2;
+        grid-row: 3;
+      }
+      .west-cell {
+        grid-column: 1;
+        grid-row: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="noord-cell cell"><div class="noord">noord</div></div>
+      <div class="oost-cell cell"><div class="oost">oost</div></div>
+      <div class="zuid-cell cell"><div class="zuid">zuid</div></div>
+      <div class="west-cell cell"><div class="west">west</div></div>
+    </div>
+  </body>
+</html>
