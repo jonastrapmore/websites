@@ -1,0 +1,1047 @@
+/*****************website van Jonas Trap - https://jonastrap.be - https://github.com/jonastrapmore/websites/tree/main/project***********************/
+/*****************ALGEMEEN + HOME PAGE***********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1f3a;
+  font-family: "Segoe UI", "San Francisco", "roboto", sans-serif;
+  color: #e8eaed;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  line-height: 1.6;
+  padding: 0;
+  font-size: 1.25rem;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  background: #0f1419;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1.5rem;
+}
+
+nav ul a {
+  display: inline-block;
+  color: #e8eaed;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.active {
+  color: #29b6f6;
+}
+
+nav li a:not(.active):hover {
+  background: #242b4d;
+}
+
+.main-content-home {
+  display: flex;
+  flex: 1;
+  margin-top: 100px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 0;
+  flex-direction: column;
+}
+
+.sectie1-links img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* zorgt voor bijsnijden indien nodig */
+  display: block;
+  border-radius: 50%; /* zorgt dat de afbeelding ook rond is */
+}
+
+.links,
+.sectie-main,
+.rechts {
+  flex: 1;
+  padding: 10px;
+  min-width: 0;
+}
+
+.sectie-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  gap: 4rem;
+}
+
+.sectie1 {
+  max-width: 1200px;
+  gap: 4rem;
+  padding: 3rem;
+  align-items: center;
+}
+
+.sectie1,
+.sectie2 {
+  display: flex;
+  gap: 33px;
+  height: 100vh;
+  overflow: hidden;
+}
+.sectie1-links,
+.sectie1-rechts {
+  max-width: 550px;
+  padding: 2.5rem 2rem;
+}
+
+.sectie1-links,
+.sectie1-rechts,
+.sectie2-links,
+.sectie2-rechts {
+  flex: 1;
+  padding: 5px;
+}
+
+.sectie1-links {
+  flex: 1;
+  max-width: 350px; /* gelijke max breedte */
+  aspect-ratio: 1/1; /* vierkante container */
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(79, 195, 247, 0.3);
+}
+
+.sectie1-rechts {
+  text-align: center;
+  max-width: 500px;
+}
+
+.sectie1-rechts h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #4fc3f7;
+}
+
+.sectie1-rechts h2 {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #b0bec5;
+}
+
+.sectie1-rechts p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #b0bec5;
+}
+
+.sectie-ervaring {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.sectie-ervaring-links,
+.sectie-ervaring-rechts {
+  text-align: center;
+}
+
+.sectie-ervaring-links-boven {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4fc3f7;
+}
+
+.sectie-ervaring-links-onder,
+.sectie-ervaring-rechts-onder {
+  font-size: 0.9rem;
+  color: #b0bec5;
+}
+
+.sectie-ervaring-rechts-boven {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #66bb6a;
+}
+
+.knoppen {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.knopcv,
+.knopcontact {
+  color: white;
+  padding: 1.2rem 2rem;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.3s, box-shadow 0.3s;
+  white-space: nowrap;
+}
+
+.knopcv {
+  background: linear-gradient(135deg, #4fc3f7, #29b6f6);
+}
+
+.knopcontact {
+  background: linear-gradient(135deg, #66bb6a, #4caf50);
+}
+
+.sectie2 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: -80px auto 3rem auto;
+  padding: 3rem;
+  height: auto;
+}
+
+.sectie2-links,
+.sectie2-rechts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  background-color: #242b4d;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  max-width: 575px;
+}
+
+.sectie2-links h1,
+.sectie2-rechts h1 {
+  width: 100%;
+  margin-bottom: 17px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.sectie2-links h1 {
+  background-color: #4caf50;
+  color: white;
+}
+
+.sectie2-rechts h1 {
+  background-color: #f44336;
+}
+
+.sectie2-links ul,
+.sectie2-rechts ul {
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  width: 100%;
+}
+
+.sectie2-links ul li,
+.sectie2-rechts ul li {
+  border-bottom: 1px solid #3a4466;
+  padding: 0.5rem 0;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.sectie3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 3.5rem;
+  border-radius: 15px;
+  background-color: #242b4d;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  margin-top: -100px;
+}
+
+.sectie4 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 2rem;
+}
+
+.sectie3 h3,
+.sectie4 h3 {
+  color: #4fc3f7;
+  font-size: 1.75rem;
+}
+
+.sectie4 h3,
+.sectie4 p {
+  padding: 5px;
+}
+
+.sectie4 .knopcv {
+  margin: 20px;
+}
+
+.sectie2-links ul li:last-child,
+.sectie2-rechts ul li:last-child {
+  border-bottom: none;
+}
+
+.home-link-ervaring{
+  text-decoration: none;
+  color: #4fc3f7;
+}
+
+.home-link-ervaring:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  background: #0f1419;
+  left: 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/*****************************default pagina**********************************/
+.def-main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem 4rem;
+  gap: 2rem;
+  box-sizing: border-box;
+  margin-top: 80px;
+}
+
+.def-sectie1,
+.def-sectie2,
+.def-sectie3,
+.def-sectie4,
+.def-sectie5,
+.def-sectie6 {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #242b4d;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem 3rem;
+  margin: 40px auto 2rem auto;
+  /* Hoogte naar wens instelbaar via margin */
+}
+
+.def-sectie1 h1 {
+  color: #29b6f6;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.def-sectie2 h2,
+.def-sectie3 h2,
+.def-sectie4 h2,
+.def-sectie5 h2,
+.def-sectie6 h2 {
+  color: #29b6f6;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #29b6f6;
+}
+.def-sectie1 p {
+  font-size: 1.2rem;
+  color: #b0bec5;
+  text-align: center;
+}
+
+.def-sectie3 h3 {
+  color: #66bb6a;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.def-sectie3 h4 {
+  color: #4fc3f7;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+.def-sectie3 h5 {
+  color: #b0bec5;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.def-sectie4 h3 {
+  color: #4fc3f7;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+.def-sectie4 h4 {
+  color: #66bb6a;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  font-size: 1.3rem;
+}
+
+.def-sectie4 p {
+  margin: 0;
+}
+.def-sectie5 h3 {
+  color: #66bb6a;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+/********************************cv.html******************/
+.cv-sectie3-period,
+.cv-sectie4-period {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #242b4d;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem 3rem;
+  margin: 40px auto;
+  /* Hoogte naar wens instelbaar via margin */
+}
+.cv-persoonlijke-gegevens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.cv-gegevens-item {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #3a4466;
+}
+.cv-gegevens-label {
+  font-weight: bold;
+  color: #b0bec5;
+  min-width: 150px;
+  margin-right: 2rem;
+}
+.cv-sectie3-period {
+  background-color: #1a1f3a;
+  border-radius: 10px;
+  border-left: 4px solid #4fc3f7;
+}
+.cv-sectie4-period {
+  background-color: #1a1f3a;
+  border-radius: 10px;
+  border-left: 4px solid #66bb6a;
+}
+
+.cv-sectie5-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.cv-sectie5-skills-grid-cat {
+  display: block;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cv-sectie5-skill-item {
+  margin-bottom: 1rem;
+}
+.cv-sectie5-skill-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+.cv-sectie5-skill-bar {
+  background-color: #1a1f3a;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.cv-sectie5-skill-progress-95 {
+  width: 95%;
+  height: 100%;
+  background-color: #4fc3f7;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+.cv-sectie5-skill-progress-90 {
+  width: 90%;
+  height: 100%;
+  background-color: #4fc3f7;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+.cv-sectie5-skill-progress-85 {
+  width: 85%;
+  height: 100%;
+  background-color: #4fc3f7;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+.cv-sectie5-skill-progress-80 {
+  width: 80%;
+  height: 100%;
+  background-color: #4fc3f7;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+.cv-sectie5-skill-progress-75 {
+  width: 75%;
+  height: 100%;
+  background-color: #4fc3f7;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+.cv-softskills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.cv-skill {
+  background-color: #1a1f3a;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #66bb6a;
+  white-space: nowrap;
+  min-width: 200px;
+  font-size: 1.2rem; /*kleiner lettertyp omdat het anders niet past*/
+}
+
+/*************************************Contact.html***********************************/
+.contact-beschikbaar {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #66bb6a;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem 3rem;
+  margin: 40px auto; /* Hoogte naar wens instelbaar via margin */
+}
+.contact-beschikbaar h1 {
+  color: #1a1f3a;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.contact-beschikbaar p {
+  font-size: 1.2rem;
+  color: #1a1f3a;
+  text-align: center;
+  font-weight: bold;
+}
+.contact-contactgegevens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.contact-contactitem {
+  background-color: #1a1f3a;
+  padding: 1.5rem;
+  border-left: 4px solid #66bb6a;
+}
+.contact-contactgegevens h3 {
+  color: #66bb6a;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+.contact-contactitem {
+  color: #29b6f6;
+  font-size: 1.2rem;
+}
+.contact-contactitem a {
+  color: #29b6f6;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.contact-contactitem a:hover {
+  text-decoration: underline;
+}
+
+.contact-formgroup {
+  margin-bottom: 1.5rem;
+}
+
+.contact-formgroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #66bb6a;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.contact-formgroup input,
+.contact-formgroup select,
+.contact-formgroup textarea {
+  width: 100%;
+  font-size: 17px;
+  padding: 0.8rem;
+  background-color: #1a1f3a;
+  border: 2px solid #4fc3f7;
+  color: #e8eaed;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.contact-formgroup textarea {
+  height: 120px;
+  resize: vertical;
+}
+.contact-formbtn {
+  background-color: #66bb6a;
+  color: #1a1f3a;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+/*************************************Hobby.html**********/
+.hobby-fotos {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #242b4d;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem 3rem;
+  margin: 40px auto 2rem auto;
+  /* Hoogte naar wens instelbaar via margin */
+}
+.hobby-foto-poker,
+.hobby-foto-petanque,
+.hobby-foto-pretpark {
+  flex: 1;
+  max-width: 350px; /* gelijke max breedte */
+  aspect-ratio: 1/1; /* vierkante container */
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(79, 195, 247, 0.3);
+}
+.hobby-fotos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* zorgt voor bijsnijden indien nodig */
+  display: block;
+  border-radius: 50%; /* zorgt dat de afbeelding ook rond is */
+}
+.hobby-green h2 {
+  color: #66bb6a;
+  border-color: #66bb6a;
+}
+.hobby-green p {
+  margin-bottom: 1rem;
+}
+.hobby-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
+}
+.hobby-skills-grid-cat ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.hobby-skills-grid-cat {
+  background-color: #1a1f3a;
+  display: block;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.hobby-skills-cat-poker {
+  border-left: 4px solid #66bb6a;
+}
+.hobby-skills-cat-petanque {
+  border-left: 4px solid #4fc3f7;
+}
+.hobby-skills-grid-cat li {
+  border-bottom: 1px solid #3a4466;
+  padding: 0.5rem 0;
+  text-align: left;
+  width: 100%;
+}
+.hobby-skills-grid-cat li:last-child {
+  border-bottom: none;
+}
+.hobby-skills-cat-poker ul li::marker {
+  color: #66bb6a;
+}
+.hobby-skills-cat-petanque ul li::marker {
+  color: #4fc3f7;
+}
+.hobby-skills-cat-petanque h4 {
+  color: #4fc3f7;
+}
+.hobby-skills-cat-poker h4 {
+  color: #66bb6a;
+}
+
+/**********************ervaring.html*****************/
+/* The actual timeline (the vertical ruler) */
+.ervaring-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.ervaring-timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #4fc3f7;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.ervaring-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+/* The circles on the timeline */
+.ervaring-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #4fc3f7;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.ervaring-left::after {
+  right: -17px;
+  left: auto;
+}
+
+.ervaring-right::after {
+  left: -16px;
+  right: auto;
+}
+
+/* Place the container to the left */
+.ervaring-left {
+  left: 0;
+  position: relative;
+  transform: translate(-10px);
+}
+
+/* Place the container to the right */
+.ervaring-right {
+  left: 50%;
+  position: relative;
+  transform: translate(10px);
+}
+
+/* Add arrows to the left container (pointing right) */
+.ervaring-left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #242b4d;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #242b4d;
+}
+
+/* Add arrows to the right container (pointing left) */
+.ervaring-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #242b4d;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #242b4d transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.ervaring-right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.ervaring-content {
+  padding: 2rem;
+  background-color: #242b4d;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ervaring-content h2 {
+  color: #66bb6a;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.ervaring-content h3 {
+  color: #4fc3f7;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.ervaring-content h4 {
+  color: #b0bec5;
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.ervaring-content p {
+  color: #e8eaed;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.ervaring-content ul{
+  margin-top: 1rem;
+  list-style-type: none;
+}
+
+.ervaring-content li {
+  color: #66bb6a;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  padding-left: 0;
+  position: relative;
+}
+
+.ervaring-content li::before {
+  content: "✓ ";
+  color: #66bb6a;
+  font-weight: bold;
+  position: relative;
+  left: 0;
+}
+
+.ervaring-h2{
+  text-align: center;
+}
+
+.ervaring-projecten-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+
+.ervaring-project{
+  background-color: #1a1f3a;
+  padding: 2rem;
+  border-radius: 15px;
+  border-left: 4px solid #4fc3f7;
+}
+
+.ervaring-project h3{
+  color: #66bb6a;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.ervaring-project p{
+  color: #e8eaed;
+  margin-bottom: 1.5rem;
+}
+
+.ervaring-project ul{
+  margin-top: 1rem;
+  list-style-type: none;
+}
+
+.ervaring-project li{
+  color: #66bb6a;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  padding-left: 0;
+  position: relative;
+}
+.ervaring-project li::before {
+  content: "✓ ";
+  color: #66bb6a;
+  font-weight: bold;
+  position: relative;
+  left: 0;
+}
+
+/*
+.sectie1,
+.sectie2,
+.sectie3,
+.sectie4,
+.sectie1-links,
+.sectie1-rechts,
+.sectie2-links,
+.sectie2-rechts,
+.links,
+.rechts,
+.sectie-main,
+.main-content,
+.main-content-home,
+.cv-main-content,
+.cv-sectie1,
+.cv-sectie-main,
+.cv-sectie2,
+.cv-sectie3,
+.cv-sectie4,
+.cv-sectie5,
+.cv-sectie5-skills-grid,
+.cv-sectie5-skills-grid-cat,
+.cv-sectie6,
+.def-sectie1,
+.def-sectie2,
+.def-sectie3,
+.def-sectie4,
+.def-sectie5,
+.def-sectie6,
+.hobby-fotos,
+.hobby-foto-poker,
+.hobby-foto-petanque,
+.hobby-foto-pretpark,
+.def-main-content
+{
+  border: 2px solid red;
+}
+.sectie1::after,
+.sectie2::after,
+.sectie3::after,
+.sectie4::after,
+.sectie1-links::after,
+.sectie1-rechts::after,
+.sectie2-links::after,
+.sectie2-rechts::after,
+.links::after,
+.rechts::after,
+.sectie-main::after,
+.main-content::after,
+.main-content-home::after,
+.cv-main-content::after,
+.cv-sectie1::after,
+.cv-sectie-main::after,
+.cv-sectie2::after,
+.cv-sectie3::after,
+.cv-sectie4::after,
+.cv-sectie5::after,
+.cv-sectie5-skills-grid::after,
+.cv-sectie5-skills-grid-cat::after,
+.cv-sectie6::after,
+.def-sectie1::after,
+.def-sectie2::after,
+.def-sectie3::after,
+.def-sectie4::after,
+.def-sectie5::after,
+.def-sectie6::after,
+.hobby-fotos::after,
+.hobby-foto-poker::after,
+.hobby-foto-petanque::after,
+.hobby-foto-pretpark::after,
+.def-main-content::after
+ {
+  content: attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 0, 0, 0.7);
+  color: white;
+  font-size: 1rem;
+  padding: 4px 10px;
+  z-index: 9999;
+  pointer-events: none;
+  border-bottom-right-radius: 8px;
+}
+.sectie1,
+.sectie2,
+.sectie3,
+.sectie4,
+.sectie1-links,
+.sectie1-rechts,
+.sectie2-links,
+.sectie2-rechts,
+.links,
+.rechts,
+.sectie-main,
+.main-content,
+.main-content-home,
+.cv-main-content,
+.cv-sectie1,
+.cv-sectie-main,
+.cv-sectie2,
+.cv-sectie3,
+.cv-sectie4,
+.cv-sectie5,
+.cv-sectie5-skills-grid,
+.cv-sectie5-skills-grid-cat,
+.cv-sectie6,
+.def-sectie1,
+.def-sectie2,
+.def-sectie3,
+.def-sectie4,
+.def-sectie5,
+.def-sectie6,
+.hobby-fotos,
+.hobby-foto-poker,
+.hobby-foto-petanque,
+.hobby-foto-pretpark,
+.def-main-content {
+  position: relative;
+}*/

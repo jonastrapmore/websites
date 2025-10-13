@@ -1,0 +1,11 @@
+body {
+  padding-top: 100px;
+  background-color: #1a1f3a;
+  font-family: "Segoe UI", "San Francisco", "roboto", sans-serif;
+  color: #e8eaed;
+}
+
+.equal-height {
+  display: flex;
+  align-items: flex-start; /* Titels bovenaan */
+}
