@@ -1,11 +1,211 @@
+/*****************website van Jonas Trap - https://jonastrap.be - https://github.com/jonastrapmore/websites/tree/main/project***********************/
+/*****************ALGEMEEN + HOME PAGE***********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  padding-top: 100px;
   background-color: #1a1f3a;
   font-family: "Segoe UI", "San Francisco", "roboto", sans-serif;
   color: #e8eaed;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  line-height: 1.6;
+  padding: 0;
+  font-size: 1.25rem;
+  height: 100%;
 }
 
-.equal-height {
-  display: flex;
-  align-items: flex-start; /* Titels bovenaan */
+.navtrap {
+  background-color: #0f1419;
+}
+
+.navtrap .navbar-nav .nav-link {
+  color: #e8eaed;
+}
+
+.navtrap .navbar-nav .nav-link.active {
+  color: #29b6f6;
+}
+
+.navtrap .navbar-nav .nav-link:not(.active):hover {
+  background-color: #242b4d;
+  color: #e8eaed;
+}
+
+.navtrap .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23e8eaed' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navtrap .navbar-toggler {
+  border-color: #e8eaed;
+}
+
+.foto-container {
+  overflow: hidden;
+  max-width: 500px;
+  aspect-ratio: 1/1; /* vierkante container */
+  box-shadow: 0 10px 30px rgba(79, 195, 247, 0.3);
+}
+
+.cardtrap {
+  background-color: #242b4d;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardtrapnoback {
+  background-color: #1a1f3a;
+}
+
+.trapgrey {
+  color: #b0bec5;
+}
+
+.cv-table {
+  table-layout: fixed;
+  font-size: small;
+}
+
+.card-job-body {
+  background-color: #1a1f3a;
+  color: #e8eaed;
+  border-top: 1px solid #21262d;
+}
+
+.cardtrap .card {
+  background-color: #1a1f3a;
+  transition: all 0.2s ease;
+}
+
+.cardtrap .card:hover {
+  box-shadow: inset 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.timeline-container {
+  position: relative;
+  padding: 2rem 0;
+}
+.timeline-line {
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #4fc3f7;
+  z-index: 1;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.timeline-dot {
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+  width: 20px;
+  height: 20px;
+  background: #4fc3f7;
+  border: 4px solid #1a1f3a;
+  border-radius: 50%;
+  z-index: 2;
+}
+.timeline-content {
+  margin-left: 3.5rem;
+  background: #242b4d;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+.timeline-content h2 {
+  color: #66bb6a;
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
+  margin-bottom: 0.5rem;
+}
+.timeline-content h3 {
+  color: #4fc3f7;
+  font-weight: bold;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  margin-bottom: 0.5rem;
+}
+.timeline-content h4 {
+  color: #b0bec5;
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.timeline-content p {
+  color: #e8eaed;
+  margin-bottom: 1rem;
+}
+.timeline-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+.timeline-content li {
+  color: #66bb6a;
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.timeline-content li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: #66bb6a;
+}
+
+.checked> li {
+  color: #66bb6a !important;
+  position: relative;
+  padding-left: 1.5rem !important;
+  padding-inline-start: 1.5rem !important; /* Overschrijft ps-3 */
+  margin-bottom: 0.5rem;
+}
+
+.checked > li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: #66bb6a;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .cv-table {
+    table-layout: fixed;
+    font-size: large;
+  }
+}
+
+@media (min-width: 768px) {
+  .timeline-line {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .timeline-dot {
+    left: auto;
+    right: calc(50% - 10px);
+  }
+  .timeline-odd .timeline-dot {
+    right: calc(50% - 10px);
+  }
+  .timeline-even .timeline-dot {
+    left: calc(50% - 10px);
+  }
+  .timeline-odd .timeline-content {
+    margin-left: 0;
+    margin-right: auto;
+    width: 45%;
+  }
+  .timeline-even .timeline-content {
+    margin-left: auto;
+    margin-right: 0;
+    width: 45%;
+  }
 }
