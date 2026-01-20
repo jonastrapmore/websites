@@ -17,7 +17,8 @@
 .def-sectie2,
 .def-sectie3,
 .def-sectie4,
-.def-sectie5 {
+.def-sectie5,
+.def-sectie6 {
   min-height: 600px;  /* Min hoogte zodat ze zichtbaar voldoende hoog zijn en dat het goed oogt voor dit voorbeeld */
   margin: 10px; 
 }
@@ -25,7 +26,8 @@
 /* Containers die meerdere kolommen bevatten worden flex containers met standaard rijrichting */
 .def-sectie2-row,
 .def-sectie4-row,
-.def-sectie5-row {
+.def-sectie5-row,
+.def-sectie6-row {
   display: flex; /* alle div's in row gaan naast elkaar staan*/
   min-height: 600px; /* Min hoogte passend bij secties */
 }
@@ -37,7 +39,9 @@
 .def-sectie4-R,
 .def-sectie5-L,
 .def-sectie5-R,
-.def-sectie5-M {
+.def-sectie5-M,
+.def-sectie6-L-nest,
+.def-sectie6-R {
   flex: 1; /* alle div's verdelen zich gelijkmatig over de parent div */
   margin: 10px; /* Ruimte rondom kolommen binnen rij */
   max-width: 100%; /* Kolommen niet breder dan hun container */
@@ -46,6 +50,18 @@
 /* Hoofdtitels centreren */
 h1 {
   text-align: center;
+}
+
+.def-sectie6-L-nest {
+  display: flex;
+  flex-direction: column;
+}
+
+.def-sectie6-L-top,
+.def-sectie6-L-bottom {
+  flex: 1;
+  margin: 10px;
+  max-width: 100%;
 }
 
 /* Media query voor kleine schermen (max 700px) dit maakt het variable voor phone's. !!!!HEBBEN WE NOG NIET GEZIEN IN DE LES!!!!*/
@@ -77,7 +93,13 @@ h1 {
   .def-sectie4,
   .def-sectie4-row,
   .def-sectie5-row,
-  .def-sectie5 {
+  .def-sectie5,
+  .def-sectie6,
+  .def-sectie6-row,
+  .def-sectie6-L-nest,
+  .def-sectie6-R,
+  .def-sectie6-L-top,
+  .def-sectie6-L-bottom {
     width: 100%;
     min-height: 300px;
     flex-direction: column; /* dit maakt dat ALLES onder elkaar komt te staan voor kleinere schermen, vermits we nu ook de def-sectiex-row dit laten doen*/
@@ -112,7 +134,13 @@ h1 {
 .def-sectie5,
 .def-sectie5-R,
 .def-sectie5-M,
-.def-sectie5-L {
+.def-sectie5-L,
+.def-sectie6,
+.def-sectie6-row,
+.def-sectie6-L-nest,
+.def-sectie6-R,
+.def-sectie6-L-top,
+.def-sectie6-L-bottom {
   border: 2px solid red;
 }
 
@@ -128,7 +156,13 @@ h1 {
 .def-sectie5::after,
 .def-sectie5-L::after,
 .def-sectie5-M::after,
-.def-sectie5-R::after {
+.def-sectie5-R::after,
+.def-sectie6::after,
+.def-sectie6-row::after,
+.def-sectie6-L-nest::after,
+.def-sectie6-R::after,
+.def-sectie6-L-top::after,
+.def-sectie6-L-bottom::after {
   content: attr(class);
   position: absolute;
   top: 0;
@@ -154,6 +188,32 @@ h1 {
 .def-sectie5,
 .def-sectie5-L,
 .def-sectie5-M,
-.def-sectie5-R {
+.def-sectie5-R,
+.def-sectie6,
+.def-sectie6-row,
+.def-sectie6-L-nest,
+.def-sectie6-R,
+.def-sectie6-L-top,
+.def-sectie6-L-bottom {
   position: relative;
 }
+/*
+breedte tabellen
+/* Tabel breedte
+table {
+  width: 100%;        Volledige breedte parent
+  max-width: 800px;   Maximale breedte
+  table-layout: fixed; Kolommen krijgen vaste breedte, negeert content
+}
+
+Kolombreedte via kolom of cellen
+col.width1 { width: 20%; }
+td.first { width: 200px; }  Fixed pixels
+
+Rijhoogte
+tr { height: 60px; }        Minimum hoogte
+td { height: 50px; }        Minimum celhoogte
+
+Auto layout (default): past zich aan content aan
+table { table-layout: auto; }
+table-layout: fixed verdeelt breedte gelijk over kolommen; auto past aan op langste content.*/

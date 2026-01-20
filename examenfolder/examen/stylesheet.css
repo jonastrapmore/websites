@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation{
+    background-color: darkgreen;
+    color: white;
+    display: flex;
+    padding: 15px;
+    margin: 5px;
+}
+.navigation div{
+    margin-right: 40px;
+    font-size: 18px;
+}
+
+.main-content{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    padding: 40px
+}
+
+.main-content h3{
+    font-size: 30px;
+}
+
+.main-content h6{
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.workshop{
+    background-color: red;
+    text-align: center;
+    margin: 0 100px;
+    padding: 15px 100px;
+    border-radius: 15px;
+    color: white;
+    font-size: 17px;
+}
+
+.voorstelling{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+#wie{
+    background: lightgrey;
+}
+#wie h4,
+#Wat h3{
+    margin: 30px 15px;
+    font-size: 23px;
+}
+#wie img, 
+#Wat p{
+    margin-left: 15px;
+}
+#wie p{
+    margin: 30px 15px;
+    font-size: 19px;
+}
+
+.informatie{
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+}
+
+#info1{
+    margin: 30px 15px;
+}
+#info1 p{
+    margin-top: 15px;
+}
+
+.zondag{
+    font-weight: bold;
+}
+
+#info2,
+#info3{
+    margin: 30px 15px
+}
+#info2 ol{
+    margin-left: 30px
+}
+
+#nomarking{
+    list-style: none;
+}
+.set{
+    display: flex;
+}
+input[name="studentemail"] {
+    color: transparent;
+}
+input[name="studentemail"]::placeholder {
+    color: transparent;
+}
+label {
+    text-transform: lowercase;
+}
+
+footer{
+    background-color: lightgray;
+    padding: 25px;
+    text-align: right;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .navigation{
+        text-align: center;
+    }
+    .voorstelling{
+        grid-template-columns: 100%;
+        margin-bottom: 40px;
+    }
+    .informatie{
+        grid-template-columns: 100%;
+        margin-bottom: 10px;
+    }
+    #info2,
+    #info3{
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+}

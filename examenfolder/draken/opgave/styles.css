@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: yellow;
+}
+
+.Top {
+  margin: 30px;
+  text-align: center;
+}
+.Top h1 {
+  margin: 20px;
+}
+.meespelen {
+  background-color: yellow;
+  color: black;
+}
+
+.navMenu {
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+}
+
+.ul {
+  list-style: none;
+}
+
+.li {
+  display: inline-block;
+  margin: 5px;
+}
+.li:hover{
+    color: yellow;
+    background-color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  width: 100%;
+  height: auto;
+
+}
+
+.container1,
+.container3 {
+  margin: 40px;
+}
+
+.adres {
+  margin-top: 20px;
+}
+
+.container2 {
+  background-color: yellow;
+  color: black;
+}
+
+.titel {
+  margin-top: 40px;
+}
+
+.container2 h2,
+.container2 h3 {
+  margin: 20px;
+}
+
+.imageSettings {
+  margin: 40px;
+  text-align: center;
+}
+
+.container2 p {
+  margin: 20px;
+}
+
+fieldset {
+  border: none;
+  margin: 20px;
+  display: flex;
+}
+fieldset label {
+  margin-right: 5px;
+}
+
+span {
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.buttom {
+  margin-left: 20px;
+}
+
+.image {
+  width: 95%;
+  height: auto;
+}
+.gamesList {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.gamesListUl{
+    margin-top: 20px;
+}
+
+footer {
+  padding: 30px;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 100%;
+    height: auto;
+  }
+  .container2{
+    padding-left: 30px;
+  }
+  .li {
+    display: block;
+    text-align: center;
+  }
+  .phone {
+    margin-top: 30px;
+  }
+
+  form {
+    margin-bottom: 15px;
+  }
+}

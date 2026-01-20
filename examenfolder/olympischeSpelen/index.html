@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Team Belgium</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Overzicht</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nieuwsbrief</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fotoalbum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Vacatures</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="mb-0">Thomas News</h1>
+        <p class="text-secondary">Welkom bij de nieuwsdienst van Thomas More!</p>
+        <div class="alert alert-info text-center" role="alert">
+            <span class="fw-bold">Team Belgium in Tokio - </span>7 medailles, 7 keer 4e en 26 olympische diploma's!
+        </div>
+        <div class="row">
+            <div class="text-center px-4 py-5 my-5">
+                <h1 class="fw-bold display-5">Olympische Spelen Tokyo</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p>Lange tijd zag het er niet naar uit dat België beter zou doen dan de 6 medailles van de
+                        Olympische
+                        Spelen
+                        2016 in Rio. Maar dankzij de 3 gouden medailles (Derwael, Red Lions en Thiam) en de bronzen
+                        medailles
+                        van de jumpingploeg en Bashir Abdi in het slotweekend zijn de Spelen een groot succes voor
+                        België.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h3>Team Belgium</h3>
+        <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+            <div class="col">
+                <div class="card mb-3">
+                    <img src="img/nafi.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nafi Thiam <span class="badge text-bg-warning text-white">GOUD</span>
+                        </h5>
+                        <p class="card-text">Nafi Thiam heeft zichzelf opgevolgd als olympisch kampioene op de
+                            zevenkamp. Op de afsluitende 800 meter kwam haar gouden medaille niet meer in gevaar. Noor
+                            Vidts deed nog een verwoede poging om het brons te veroveren, maar zilver en brons gaan naar
+                            Nederland.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <img src="img/lions.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Lions <span class="badge text-bg-warning text-white">GOUD</span></h5>
+                        <p class="card-text">De Belgische hockeymannen hebben zich tot olympisch kampioen gekroond.
+                            Australië dreef de Red Lions tot het uiterste, maar in de shoot-outs toonde doelman Vanasch
+                            waarom hij de beste doelman ter wereld is.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <img src="img/nina.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nina Derwael <span class="badge text-bg-warning text-white">GOUD</span>
+                        </h5>
+                        <p class="card-text">Nina Derwael heeft België een eerste gouden medaille op deze Olympische
+                            Spelen bezorgd. In de finale aan de brug met ongelijke leggers was ze een klasse apart, ook
+                            omdat haar concurrente Sunisa Lee geen perfecte oefening turnde.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 id="overzicht">
+            Overzicht medailles <span class="lead">- zilver en brons</span>
+        </h3>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Wout Van Aert: zulver
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Wout van Aert heeft de olympische rekening van de Belgen geopend, maar het is niet de
+                        verhoopte gouden medaille geworden. Die ging verdiend naar de Ecuadoraan Richard Carapaz.
+                        Van Aert won de sprint om de 2e plaats, voor Tourwinnaar Tadej Pogacar.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Bashir Abdi: Brons
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Op de laatste dag van de Olympische Spelen is voor de Belgen nog een 7e medaille uit de bus
+                        gekomen. In de marathon werd een indrukwekkende Bashir Abdi knap 3e, Koen Naert finishte als
+                        10e. De Keniaanse topfavoriet Eliud Kipchoge verlengde zijn titel.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        jumpingploeg: brons
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        De Belgische jumpingruiters hebben dan toch nog een medaille behaald op de Olympische Spelen.
+                        Die leek gaan vliegen na de 8 strafpunten van Grégory Wathelet, die als laatste in de piste
+                        kwam. Maar de Franse koplopers gingen helemaal de mist in en vallen nog buiten de prijzen.
+                        Zweden won het goud na een spannende jump-off tegen de Verenigde Staten.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Mathhias Casse: brons
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Matthias Casse heeft zijn olympische toernooi met een medaille kunnen afsluiten, zij het niet
+                        met de verhoopte gouden. In de halve finales verloor hij na een zenuwslopende match tegen de
+                        Japanner Nagase, in de kamp om het brons vloerde hij de Georgiër Grigalasjvili met ippon.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="row mt-3">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <h3>Nieuwsbrief</h3>
+                            <p>Schrijf je in voor onze nieuwsbrief en we houden je op de hoogte van alle nieuwe weetjes!
+                            </p>
+                        </div>
+                        <div>
+                            <form>
+                                <div class="row">
+                                    <div class="col mb-3">
+                                        <input type="text" class="form-control" id="exampleInputVoornaam"
+                                            placeholder="Voornaam">
+                                    </div>
+                                    <div class=" col mb-3">
+                                        <input type="text" class="form-control" id="exampleInputNaam"
+                                            placeholder="Familienaam">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="exampleInputEmail"
+                                        placeholder="E-mailadres" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We delen je gegens niet met derden
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-sm">Inschrijven</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div>
+                            <h2>Vacatures</h2>
+                            <p>We zijn nog op zoek naar een <span class="fw-bold">content creator</span> , iets voor
+                                jou?</p>
+                            <div>
+                                <button type="button" class="btn btn-primary btn-sm rounded-2" data-bs-toggle="modal"
+                                    data-bs-target="#modal">Klik hier
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div>
+                    <h2>Fotoalbum</h2>
+                </div>
+                <div>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/c1.jpg" class="d-block w-100" alt="sprint">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/c2.jpg" class="d-block w-100" alt="rankschikking">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/c3.jpg" class="d-block w-100" alt="stadion">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <hr>
+            <p class="text-center text-muted">
+                <strong>© 2021 Thomas News</strong> onder de vleugels van
+                <a href="https://www.thomasmore.be" target="_blank">thomasmore.be</a>
+            </p>
+        </footer>
+        <!-- Modal -->
+        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Vacature » Content creator</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Ben je goed in..</p>
+                        <ul>
+                            <li>Social media</li>
+                            <li>Artikels schrijven</li>
+                            <li>Photoshop</li>
+                        </ul>
+                        <p>Stuur ons dan <a href="mailto:info@example.com">een mailtje</a> en stel jezelf even voor!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
