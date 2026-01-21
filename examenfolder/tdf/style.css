@@ -1,0 +1,9 @@
+.card {
+  height: 150px;
+  position: top;
+}
+.iframe {
+  width: 100%;           /* ✅ Geen quotes */
+  height: 450px;         /* ✅ Eenheid toevoegen */
+  border: 0;             /* ✅ Geen quotes */
+}

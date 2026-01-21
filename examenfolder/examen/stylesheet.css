@@ -128,4 +128,9 @@ footer{
         margin-top: 40px;
         margin-left: 25px;
     }
+    .workshop{
+        margin: 0 10px;      /* bijna full-width */
+        padding: 10px 15px;  /* veel minder padding */
+        font-size: 15px;     /* iets kleinere tekst */
+    }
 }
