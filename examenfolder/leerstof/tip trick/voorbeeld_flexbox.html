@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav.aleyna {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: crimson;
+            padding: 10px;
+        }
+
+        nav.aleyna a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav.aleyna a:hover {
+            text-decoration: underline;
+        }
+
+        @media (width <=756px) {
+            nav.aleyna {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="aleyna">
+        <a href="#">Start</a>
+        <a href="#">Producten</a>
+        <a href="#">Diensten</a>
+        <a href="#">Vacatures</a>
+        <a href="#">Contact</a>
+    </nav>
+    <a href="#">test</a>
+</body>
+
+</html>

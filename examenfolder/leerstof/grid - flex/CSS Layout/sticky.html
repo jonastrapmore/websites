@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            padding: 5px;
+            border: 3px solid gray;
+        }
+
+        div.sticky {
+            position: -webkit-sticky;
+            /* voor safari browsers */
+            position: sticky;
+            top: 0;
+            /* bottom: 0; */
+            padding: 5px;
+            background-color: red;
+            color: white;
+            border: 2px solid darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Try to <b>scroll</b> inside this frame to understand how sticky positioning works.
+    </p>
+    <p>Note: IE/Edge 15 and earlier versions do not support sticky position.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sapiente distinctio eum porro veniam
+        repudiandae quae, aspernatur repellat unde mollitia error ea sunt culpa ut consequuntur non odio consequatur!
+        Commodi?
+        Facere, eaque voluptates beatae impedit fugit ad atque quasi quas minima quidem pariatur provident veritatis
+        alias rem asperiores, cumque necessitatibus voluptate quam. Temporibus totam mollitia et nulla animi voluptate
+        repellendus.
+        Tempore maxime, reiciendis soluta laudantium ducimus similique quibusdam officiis reprehenderit aliquid ea
+        ratione voluptatibus, dolorum vero vitae nulla id temporibus delectus fugit architecto minus modi obcaecati
+        facere possimus. Ullam, nostrum.
+        Necessitatibus ad aliquam fugit, illum aut vero eos libero consectetur maxime. Nihil doloremque esse minus
+        molestias blanditiis! Inventore exercitationem nesciunt fugit excepturi debitis nulla dolores, amet odio, beatae
+        tempore labore!
+        Consequuntur, cum quidem natus, dicta, vitae rem dolore laboriosam iste voluptatum dignissimos pariatur
+        voluptatem quisquam aliquid modi expedita quos tenetur impedit. Est reiciendis tempore dignissimos reprehenderit
+        architecto fugit iusto repellendus!
+        Iste aperiam dolores, sint similique placeat nemo eum, aspernatur illum maiores ut accusamus soluta, fuga quam?
+        Cumque fugiat explicabo dignissimos veniam repellendus. Id facilis aperiam eaque expedita animi. Porro, labore!
+        Consectetur ipsam ratione minima. Asperiores culpa recusandae reiciendis nesciunt, adipisci aperiam cumque quae
+        tempora sed quisquam quas excepturi maiores nisi debitis sit harum dolore ut nemo, alias quia, ducimus mollitia.
+        Iusto qui perspiciatis deserunt cumque reiciendis illum aliquam doloremque nemo incidunt tempore dignissimos aut
+        ipsam, nisi eveniet. Perspiciatis recusandae animi architecto possimus amet veritatis, officia eligendi
+        quibusdam, nulla illo ipsa!
+        Magnam similique, saepe et quibusdam doloremque aliquid voluptate commodi, veritatis, voluptatum quisquam
+        impedit minus. Dolorum provident voluptate dolore totam atque consequatur voluptatum illo? Voluptatum quasi
+        explicabo nam soluta sunt eveniet!
+        Excepturi quod tempore ea asperiores, voluptatum fugiat labore, illo quaerat architecto ducimus laboriosam
+        molestias. Voluptatibus eum, eos itaque animi quod facilis ex error eligendi praesentium, rem libero aspernatur
+        nobis cum.</p>
+
+
+    <div class="sticky">I am sticky! Ik zou wel een menu kunnen zijn ;-)</div>
+
+    <div>
+        <p>
+            In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll
+            position.
+        </p>
+        <p>Scroll back up to remove the stickyness.</p>
+        <p>Some text to enable scrolling...</p>
+    </div>
+
+    <div>
+        Sed ullamcorper arcu nec condimentum imperdiet. Nunc vulputate convallis nulla sit amet feugiat. Nam et molestie
+        dui, quis fermentum arcu. Fusce purus tortor, auctor volutpat sagittis ut, dignissim pretium lectus. Integer
+        dapibus euismod aliquam. In magna
+        libero, sagittis pellentesque ornare in, tristique ut metus. Fusce eleifend et justo sit amet porta.
+        Pellentesque vehicula id risus ut faucibus. Suspendisse non turpis non purus vulputate vestibulum sollicitudin
+        et nibh. Cras elementum mauris
+        non diam hendrerit interdum. Vestibulum pharetra, turpis quis mattis viverra, nunc dui tempus nibh, non
+        dignissim risus quam a justo. Vivamus id tristique mauris. Mauris elementum sit amet dolor ac auctor.
+    </div>
+    <div>
+        Maecenas felis magna, tincidunt quis gravida ac, tempus nec est. Donec auctor leo nibh, non faucibus nulla
+        feugiat eu. Integer mauris ligula, mollis cursus lorem ut, consequat tristique quam. Suspendisse non ligula
+        venenatis, blandit lacus quis, imperdiet
+        lorem. Nunc a facilisis tellus. Maecenas eu mollis libero, non ornare nunc. Ut sapien velit, rutrum imperdiet
+        ornare non, consequat vitae purus. Morbi auctor diam enim, id bibendum est dapibus ac. Mauris in volutpat erat.
+        Curabitur euismod lectus
+        ut purus vestibulum tempus. Etiam pretium eros nisl, ultrices consequat nisi viverra luctus. Quisque fringilla
+        molestie ligula, eget sagittis leo pulvinar eget. Suspendisse porta metus quis metus lacinia, vel viverra nisi
+        consectetur. Proin efficitur
+        leo et elit eleifend, in mollis odio volutpat. In in lacus dui. Aliquam hendrerit velit laoreet diam viverra
+        hendrerit.
+    </div>
+    <div>
+        Mauris rutrum ex leo, vel volutpat augue tempus ac. Maecenas placerat elit aliquet orci venenatis lobortis.
+        Donec mollis magna vel nunc vehicula volutpat. Etiam lectus ligula, elementum nec interdum sit amet, congue vel
+        mi. Nulla pulvinar ante sed nibh
+        lobortis molestie. Integer commodo purus at neque imperdiet aliquet. Duis nec est velit. Suspendisse convallis
+        lectus id orci laoreet, in molestie elit tristique. Morbi viverra id mi nec consequat. Phasellus libero dui,
+        sodales vitae cursus in,
+        interdum quis arcu. Etiam suscipit, ipsum sit amet tincidunt imperdiet, ipsum neque convallis velit, a ultricies
+        dolor turpis rhoncus elit. In consectetur tristique eleifend. Duis scelerisque arcu diam, id aliquet magna
+        facilisis in. Vestibulum
+        id urna nisl.
+    </div>
+    <div>
+        Quisque venenatis mi augue, quis mattis dui faucibus nec. Sed ut laoreet felis, vitae commodo risus. Quisque
+        viverra ac leo at ornare. Suspendisse nec malesuada nunc. Ut feugiat risus turpis, in sagittis velit porttitor
+        rutrum. Nulla lobortis, ligula
+        sit amet pretium lobortis, mi purus gravida nulla, a viverra tortor est id eros. Fusce est neque, euismod eu
+        interdum fermentum, elementum sit amet sapien. Ut a justo at enim tempor sagittis. Aliquam mauris metus, finibus
+        imperdiet scelerisque
+        a, sollicitudin ac odio. Phasellus accumsan orci quis dictum sagittis. Nulla mattis purus dapibus, dignissim
+        purus eu, accumsan est. Proin id eleifend diam, vitae elementum lacus. Integer enim est, pharetra sit amet
+        efficitur nec, dignissim eget
+        sapien. Ut malesuada libero vitae lectus aliquam, sed cursus ex porttitor. Nullam ullamcorper, nibh nec semper
+        semper, libero velit euismod est, a bibendum nisi est at elit.
+    </div>
+
+    <div>
+        Sed ullamcorper arcu nec condimentum imperdiet. Nunc vulputate convallis nulla sit amet feugiat. Nam et molestie
+        dui, quis fermentum arcu. Fusce purus tortor, auctor volutpat sagittis ut, dignissim pretium lectus. Integer
+        dapibus euismod aliquam. In magna
+        libero, sagittis pellentesque ornare in, tristique ut metus. Fusce eleifend et justo sit amet porta.
+        Pellentesque vehicula id risus ut faucibus. Suspendisse non turpis non purus vulputate vestibulum sollicitudin
+        et nibh. Cras elementum mauris
+        non diam hendrerit interdum. Vestibulum pharetra, turpis quis mattis viverra, nunc dui tempus nibh, non
+        dignissim risus quam a justo. Vivamus id tristique mauris. Mauris elementum sit amet dolor ac auctor.
+    </div>
+    <div>
+        Maecenas felis magna, tincidunt quis gravida ac, tempus nec est. Donec auctor leo nibh, non faucibus nulla
+        feugiat eu. Integer mauris ligula, mollis cursus lorem ut, consequat tristique quam. Suspendisse non ligula
+        venenatis, blandit lacus quis, imperdiet
+        lorem. Nunc a facilisis tellus. Maecenas eu mollis libero, non ornare nunc. Ut sapien velit, rutrum imperdiet
+        ornare non, consequat vitae purus. Morbi auctor diam enim, id bibendum est dapibus ac. Mauris in volutpat erat.
+        Curabitur euismod lectus
+        ut purus vestibulum tempus. Etiam pretium eros nisl, ultrices consequat nisi viverra luctus. Quisque fringilla
+        molestie ligula, eget sagittis leo pulvinar eget. Suspendisse porta metus quis metus lacinia, vel viverra nisi
+        consectetur. Proin efficitur
+        leo et elit eleifend, in mollis odio volutpat. In in lacus dui. Aliquam hendrerit velit laoreet diam viverra
+        hendrerit.
+    </div>
+    <div>
+        Mauris rutrum ex leo, vel volutpat augue tempus ac. Maecenas placerat elit aliquet orci venenatis lobortis.
+        Donec mollis magna vel nunc vehicula volutpat. Etiam lectus ligula, elementum nec interdum sit amet, congue vel
+        mi. Nulla pulvinar ante sed nibh
+        lobortis molestie. Integer commodo purus at neque imperdiet aliquet. Duis nec est velit. Suspendisse convallis
+        lectus id orci laoreet, in molestie elit tristique. Morbi viverra id mi nec consequat. Phasellus libero dui,
+        sodales vitae cursus in,
+        interdum quis arcu. Etiam suscipit, ipsum sit amet tincidunt imperdiet, ipsum neque convallis velit, a ultricies
+        dolor turpis rhoncus elit. In consectetur tristique eleifend. Duis scelerisque arcu diam, id aliquet magna
+        facilisis in. Vestibulum
+        id urna nisl.
+    </div>
+    <div>
+        Quisque venenatis mi augue, quis mattis dui faucibus nec. Sed ut laoreet felis, vitae commodo risus. Quisque
+        viverra ac leo at ornare. Suspendisse nec malesuada nunc. Ut feugiat risus turpis, in sagittis velit porttitor
+        rutrum. Nulla lobortis, ligula
+        sit amet pretium lobortis, mi purus gravida nulla, a viverra tortor est id eros. Fusce est neque, euismod eu
+        interdum fermentum, elementum sit amet sapien. Ut a justo at enim tempor sagittis. Aliquam mauris metus, finibus
+        imperdiet scelerisque
+        a, sollicitudin ac odio. Phasellus accumsan orci quis dictum sagittis. Nulla mattis purus dapibus, dignissim
+        purus eu, accumsan est. Proin id eleifend diam, vitae elementum lacus. Integer enim est, pharetra sit amet
+        efficitur nec, dignissim eget
+        sapien. Ut malesuada libero vitae lectus aliquam, sed cursus ex porttitor. Nullam ullamcorper, nibh nec semper
+        semper, libero velit euismod est, a bibendum nisi est at elit.
+    </div>
+    <div>
+        Mauris rutrum ex leo, vel volutpat augue tempus ac. Maecenas placerat elit aliquet orci venenatis lobortis.
+        Donec mollis magna vel nunc vehicula volutpat. Etiam lectus ligula, elementum nec interdum sit amet, congue vel
+        mi. Nulla pulvinar ante sed nibh
+        lobortis molestie. Integer commodo purus at neque imperdiet aliquet. Duis nec est velit. Suspendisse convallis
+        lectus id orci laoreet, in molestie elit tristique. Morbi viverra id mi nec consequat. Phasellus libero dui,
+        sodales vitae cursus in,
+        interdum quis arcu. Etiam suscipit, ipsum sit amet tincidunt imperdiet, ipsum neque convallis velit, a ultricies
+        dolor turpis rhoncus elit. In consectetur tristique eleifend. Duis scelerisque arcu diam, id aliquet magna
+        facilisis in. Vestibulum
+        id urna nisl.
+    </div>
+    <div>
+        Quisque venenatis mi augue, quis mattis dui faucibus nec. Sed ut laoreet felis, vitae commodo risus. Quisque
+        viverra ac leo at ornare. Suspendisse nec malesuada nunc. Ut feugiat risus turpis, in sagittis velit porttitor
+        rutrum. Nulla lobortis, ligula
+        sit amet pretium lobortis, mi purus gravida nulla, a viverra tortor est id eros. Fusce est neque, euismod eu
+        interdum fermentum, elementum sit amet sapien. Ut a justo at enim tempor sagittis. Aliquam mauris metus, finibus
+        imperdiet scelerisque
+        a, sollicitudin ac odio. Phasellus accumsan orci quis dictum sagittis. Nulla mattis purus dapibus, dignissim
+        purus eu, accumsan est. Proin id eleifend diam, vitae elementum lacus. Integer enim est, pharetra sit amet
+        efficitur nec, dignissim eget
+        sapien. Ut malesuada libero vitae lectus aliquam, sed cursus ex porttitor. Nullam ullamcorper, nibh nec semper
+        semper, libero velit euismod est, a bibendum nisi est at elit.
+    </div>
+</body>
+
+</html>
