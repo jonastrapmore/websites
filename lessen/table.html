@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="https://tm-statweb.be/sendmail.php" method="post">
+        <div hidden>
+            <input type="email" name="studentemail" value="r0335225@student.thomasmore.be">
+            <input type="text" name="subject" value="zak">
+        </div>
+      <div>
+        <label for="gebruikersnaam">Gebruikersnaam</label>
+        <input
+          type="text"
+          name="gebruikersnaam"
+          id="gebruikersnaam"
+          placeholder="uw gebruikersnaam"
+          required
+        >
+      </div>
+      <div>
+        <label for="wachtwoord">Wachtwoord</label>
+        <input
+          type="password"
+          name="wachtwoord"
+          id="wachtwoord"
+          value="testing"
+          required
+        >
+      </div>
+      <div>
+        <label for="kleur">Kies je kleur</label>
+        <select name="kleur" id="kleur">
+          <option value="0">Maak een keuze</option>
+          <option value="groen">Groen</option>
+          <option value="blauw">Blauw</option>
+          <option value="geel" selected>Geel</option>
+        </select>
+      </div>
+      <input type="submit" value="inloggen" >
+    </form>
+  </body>
+</html>

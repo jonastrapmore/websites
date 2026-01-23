@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<!--Jonas Trap - r0335225-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark mb-3" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-danger" href="#">Netflix</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Trending
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action movies</a></li>
+                            <li><a class="dropdown-item" href="#">Romantic movies</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Halloween movies</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            This is a demo <strong>Netflix</strong> clone for eductational purposes
+            only.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <h1 class="h1 fw-bold">
+            Are you ready?<span class="badge text-bg-dark mx-2"><i class="bi bi-dice-6-fill"></i></span>
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            distinctio natus recusandae similique, animi officia eius ipsum?
+            Inventore assumenda minima neque omnis quibusdam recusandae eius itaque
+            delectus accusantium, cum fugit.
+        </p>
+        <h2 class="h2 fw-bold">What the world is watching</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 mb-3">
+            <div class="col">
+                <div class="card mb-3">
+                    <img src="img/s.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Shooter <span class="badge text-bg-warning rounded-0 fw-bold"><i
+                                    class="bi bi-exclamation"></i></span></h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                            facilis blanditiis eligendi praesentium repellendus molestiae
+                            labore nemo nesciunt eaque pariatur, iusto enim earum laboriosam
+                            illum voluptates perspiciatis impedit saepe odit?
+                        </p>
+                        <a href="#" class="btn btn-danger rounded-0">Watch now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <img src="img/b.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Shooter</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                            facilis blanditiis eligendi praesentium repellendus molestiae
+                            labore nemo nesciunt eaque pariatur, iusto enim earum laboriosam
+                            illum voluptates perspiciatis impedit saepe odit?
+                        </p>
+                        <a href="#" class="btn btn-danger rounded-0">Watch now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <img src="img/h.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Shooter</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                            facilis blanditiis eligendi praesentium repellendus molestiae
+                            labore nemo nesciunt eaque pariatur, iusto enim earum laboriosam
+                            illum voluptates perspiciatis impedit saepe odit?
+                        </p>
+                        <a href="#" class="btn btn-danger rounded-0">Watch now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <img src="img/3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Shooter</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                            facilis blanditiis eligendi praesentium repellendus molestiae
+                            labore nemo nesciunt eaque pariatur, iusto enim earum laboriosam
+                            illum voluptates perspiciatis impedit saepe odit?
+                        </p>
+                        <a href="#" class="btn btn-danger rounded-0">Watch now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="sectie2" class="row g-3 mb-4">
+            <div class="col-md-6 mb-3">
+                <h2 class="h2 fw-bold">FAQ</h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Wat can i watch on netflix
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                                placeat sapiente atque non amet, vel alias quod, nihil earum
+                                molestias nulla error, ab consectetur excepturi adipisci
+                                repellendus veritatis voluptas et!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What is Netflix
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Op de laatste dag van de Olympische Spelen is voor de Belgen nog
+                                een 7e medaille uit de bus gekomen. In de marathon werd een
+                                indrukwekkende Bashir Abdi knap 3e, Koen Naert finishte als 10e.
+                                De Keniaanse topfavoriet Eliud Kipchoge verlengde zijn titel.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Where can i watch
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                De Belgische jumpingruiters hebben dan toch nog een medaille
+                                behaald op de Olympische Spelen. Die leek gaan vliegen na de 8
+                                strafpunten van Grégory Wathelet, die als laatste in de piste
+                                kwam. Maar de Franse koplopers gingen helemaal de mist in en
+                                vallen nog buiten de prijzen. Zweden won het goud na een
+                                spannende jump-off tegen de Verenigde Staten.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                I netflix good for kids
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Matthias Casse heeft zijn olympische toernooi met een medaille
+                                kunnen afsluiten, zij het niet met de verhoopte gouden. In de
+                                halve finales verloor hij na een zenuwslopende match tegen de
+                                Japanner Nagase, in de kamp om het brons vloerde hij de Georgiër
+                                Grigalasjvili met ippon.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h2 class="h2 fw-bold">Sign up now</h2>
+                <form action="#" method="post">
+                    <div class="row">
+                        <div class="col-lg mb-3">
+                            <label for="voornaam" class="form-label">First name <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="voornaam" name="voornaam" required>
+                        </div>
+                        <div class="col-lg mb-3">
+                            <label for="familienaam" class="form-label">Last name <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="familienaam" name="familienaam" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail address<span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <label for="familienaam" class="form-label">Subscription <span class="text-danger">*</span></label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>shoose your package</option>
+                        <option value="1">package One</option>
+                        <option value="2">package Two</option>
+                        <option value="3">package Three</option>
+                    </select>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                        <label class="form-check-label" for="checkDefault">
+                            I agree to <a href="#" class="link-primary">Terms and conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-dark rounded-0"><i class="bi bi-send-fill"></i> send
+                        it</button>
+                </form>
+            </div>
+        </section>
+        <div class="bg-info p-4 mb-3">
+            <h2 class="f2 fw-bold">It's Ad-Free (of you pay enough) and so much more!</h2>
+            <button type="button" class="btn btn-light rounded-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Get Premium
+            </button>
+        </div>
+        <section class="row g-3 mb-3">
+            <div class="col-md-6 mb-3">
+                <h2 class="h2 fw-bold">Popular Items</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">A house of dynamite <i class="bi bi-arrow-through-heart-fill"></i></li>
+                    <li class="list-group-item">Trap <i class="bi bi-lightning-fill"></i></li>
+                    <li class="list-group-item active" aria-current="true">the diplomat <i class="bi bi-lightning"></i>
+                    </li>
+                    <li class=" list-group-item">the asset <i class="bi bi-lightning-fill"></i></li>
+                    <li class="list-group-item">Wednesday <i class="bi bi-lightning"></i></li>
+                    <li class="list-group-item">Departure <i class="bi bi-lightning"></i></li>
+                </ul>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h2 class="h2 fw-bold">Carousel</h2>
+                <p>Put all images you have here ...</p>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/h.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/b.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/s.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Series</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Movies</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2025 Netflix, Inc</p>
+        </footer>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <div class="col">
+                            <p>loading</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
